@@ -21,15 +21,19 @@
         @font-face {
             font-family: 'Termina Test';
             src: url('assets/fuentes/SECUNDARIA/Termina Test/TerminaTest-Black.otf') format('opentype');
-            font-weight: 900; /* Black */
+            font-weight: 900;
+            /* Black */
             font-style: normal;
         }
+
         @font-face {
             font-family: 'Termina Test';
             src: url('assets/fuentes/SECUNDARIA/Termina Test/TerminaTest-Regular.otf') format('opentype');
-            font-weight: normal; /* Regular */
+            font-weight: normal;
+            /* Regular */
             font-style: normal;
         }
+
         @font-face {
             font-family: 'Archivo';
             src: url('assets/fuentes/TERCERA/Archivo_Condensed-Bold.ttf') format('truetype');
@@ -45,7 +49,8 @@
         body {
             font-family: 'Archivo', sans-serif;
             font-weight: bold;
-            background-color: #000000; /* Fondo principal oscuro */
+            background-color: #000000;
+            /* Fondo principal oscuro */
             color: #fff;
         }
 
@@ -56,7 +61,8 @@
             font-family: 'Termina Test', sans-serif;
             text-transform: uppercase;
             letter-spacing: 0.05em;
-            font-weight: 900; /* Usamos Termina Test Black por defecto para títulos */
+            font-weight: 900;
+            /* Usamos Termina Test Black por defecto para títulos */
         }
 
         /* Video de Fondo */
@@ -91,13 +97,15 @@
         #header.header-shrink .header-logo {
             width: 5rem;
         }
-        
+
         #header .nav-link {
             color: #1a1a1a;
             transition: color 0.3s ease-in-out;
         }
+
         #header .nav-link:hover {
-            color: #4d4d4d; /* Tono más claro para el hover */
+            color: #ffffff;
+            /* Tono más claro para el hover */
         }
 
 
@@ -110,6 +118,10 @@
 
         .kings-gradient-bg {
             background: linear-gradient(90deg, #F59E0B, #D97706);
+        }
+
+        #buy-main-product-btn:hover {
+            filter: brightness(1.1);
         }
 
         .pulse-btn {
@@ -134,7 +146,7 @@
         .product-card,
         .president-card,
         .info-panel {
-            background-color: rgba(30, 30, 30, 0.6); /* Lighter dark background */
+            background-color: #1a1a1a;
             border: 1px solid rgba(75, 75, 75, 0.5);
             backdrop-filter: blur(10px);
             transition: all 0.3s ease-in-out;
@@ -147,7 +159,7 @@
             transform: translateY(-5px);
             border-color: #f4af23;
         }
-        
+
         #hero-carousel {
             border-color: #f4af23;
             box-shadow: 0 0 25px 5px rgba(244, 175, 35, 0.3);
@@ -172,18 +184,16 @@
 
         .team-ticker::before {
             left: 0;
-            background: linear-gradient(to right, #000000 20%, rgba(0,0,0,0) 100%);
+            background: linear-gradient(to right, #000000 20%, rgba(0, 0, 0, 0) 100%);
         }
 
         .team-ticker::after {
             right: 0;
-            background: linear-gradient(to left, #000000 20%, rgba(0,0,0,0) 100%);
+            background: linear-gradient(to left, #000000 20%, rgba(0, 0, 0, 0) 100%);
         }
 
         .team-ticker-track {
             display: flex;
-            width: calc(150px * 24);
-            animation: team-scroll 45s linear infinite;
         }
 
         .team-logo-item {
@@ -202,20 +212,11 @@
             transition: all 0.3s ease;
         }
 
-        .team-logo-item:hover img {
+        .team-logo-item img.is-active {
             filter: grayscale(0%) opacity(1);
-            transform: scale(1.1);
+            transform: scale(1.15);
         }
 
-        @keyframes team-scroll {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(calc(-150px * 12));
-            }
-        }
 
         /* Modal (Ventana Emergente) */
         #product-modal,
@@ -244,20 +245,6 @@
         #mobile-menu {
             transition: transform 0.3s ease-in-out;
         }
-
-        .president-logo {
-            position: absolute;
-            top: 1rem;
-            left: 1rem;
-            width: 30%;
-            height: auto;
-            opacity: 0.7;
-            transition: opacity 0.3s ease;
-        }
-
-        .president-card:hover .president-logo {
-            opacity: 1;
-        }
     </style>
 </head>
 
@@ -270,8 +257,8 @@
     </video>
 
     <!-- Header -->
-    <header id="header"
-        class="fixed top-0 left-0 right-0 z-50 transition-colors duration-500" style="background-color: #f4af23;">
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-colors duration-500"
+        style="background-color: #f4af23;">
         <nav class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
             <div class="header-logo">
                 <img src="assets/logos/LGB-11.png" alt="KLA Logo" class="w-full h-auto">
@@ -284,9 +271,9 @@
             <div class="flex items-center space-x-2 sm:space-x-4">
                 <div class="relative">
                     <input id="search-input" type="text" placeholder="Buscar..."
-                        class="bg-gray-800 text-white rounded-full px-4 py-1 w-0 focus:w-32 sm:w-48 focus:outline-none focus:ring-2 focus:ring-orange-500">
-                    <button id="search-btn" class="p-2" style="color: #1a1a1a;"><svg class="w-6 h-6"
-                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        class="bg-gray-800 text-white rounded-full px-4 py-1 w-0 focus:w-32 sm:w-48 focus:outline-none focus:ring-2 focus:ring-black">
+                    <button id="search-btn" class="p-2" style="color: #1a1a1a;"><svg class="w-6 h-6" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                         </svg></button>
@@ -310,8 +297,8 @@
             </div>
         </nav>
         <!-- Mobile Menu -->
-        <div id="mobile-menu"
-            class="md:hidden absolute top-full left-0 w-full transform -translate-x-full" style="background-color: rgba(244, 175, 35, 0.95);">
+        <div id="mobile-menu" class="md:hidden absolute top-full left-0 w-full transform -translate-x-full"
+            style="background-color: rgba(244, 175, 35, 0.95);">
             <div class="flex flex-col items-center space-y-4 py-4 font-primary text-xl">
                 <a href="#shop" class="mobile-link nav-link">Tienda</a>
                 <a href="#presidents" class="mobile-link nav-link">Presidentes</a>
@@ -369,7 +356,8 @@
         <!-- Presidents Section -->
         <section id="presidents" class="py-16 sm:py-24">
             <div class="container mx-auto px-4">
-                <h2 class="text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade" style="color: #f4af23;">LLEVA EL ESCUDO DE TU
+                <h2 class="text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade" style="color: #f4af23;">LLEVA
+                    EL ESCUDO DE TU
                     PRESIDENTE</h2>
                 <div id="presidents-grid" class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
                     <!-- Presidentes se inyectan aquí -->
@@ -389,7 +377,8 @@
         <!-- Shop Section -->
         <section id="shop" class="py-16 sm:py-24">
             <div class="container mx-auto px-4">
-                <h2 class="text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade" style="color: #f4af23;">NUESTROS RELOJES</h2>
+                <h2 class="text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade" style="color: #f4af23;">
+                    NUESTROS RELOJES</h2>
                 <div id="product-grid" class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8">
                     <!-- Productos se inyectan aquí -->
                 </div>
@@ -399,17 +388,22 @@
         <!-- Features Section -->
         <section id="features" class="py-16 sm:py-24">
             <div class="container mx-auto px-4 text-center">
-                <h2 class="text-4xl md:text-6xl font-bold mb-4 reveal-fade" style="color: #f4af23;">FUNCIONALIDAD SIN LÍMITES</h2>
-                <p class="max-w-3xl mx-auto text-gray-400 mb-12 reveal-fade">Descubre el Smartwatch Edición Kings League, diseñado para verdaderos fanáticos del deporte y la innovación.</p>
+                <h2 class="text-4xl md:text-6xl font-bold mb-4 reveal-fade" style="color: #f4af23;">FUNCIONALIDAD SIN
+                    LÍMITES</h2>
+                <p class="max-w-3xl mx-auto text-gray-400 mb-12 reveal-fade">Descubre el Smartwatch Edición Kings
+                    League, diseñado para verdaderos fanáticos del deporte y la innovación.</p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="feature-card p-6 md:p-8 rounded-2xl reveal-feature">
                         <div class="kings-gradient-text mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 md:h-16 md:w-16 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 md:h-16 md:w-16 mx-auto"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                             </svg>
                         </div>
                         <h3 class="text-3xl md:text-4xl font-bold mb-2 text-white">CAJA RESISTENTE</h3>
-                        <p class="text-gray-400 text-sm md:text-base">Fabricado con aleación de Zinc+ABS y protección IP68 contra agua y polvo.</p>
+                        <p class="text-gray-400 text-sm md:text-base">Fabricado con aleación de Zinc+ABS y protección
+                            IP68 contra agua y polvo.</p>
                     </div>
                     <div class="feature-card p-6 md:p-8 rounded-2xl reveal-feature">
                         <div class="kings-gradient-text mb-4"><svg class="h-12 w-12 md:h-16 md:w-16 mx-auto" fill="none"
@@ -418,16 +412,20 @@
                                     d="M13 10V3L4 14h7v7l9-11h-7z" />
                             </svg></div>
                         <h3 class="text-3xl md:text-4xl font-bold mb-2 text-white">BATERÍA DE 600mAh</h3>
-                        <p class="text-gray-400 text-sm md:text-base">Batería de larga duración y conexión Bluetooth 5.2 para una conectividad estable.</p>
+                        <p class="text-gray-400 text-sm md:text-base">Batería de larga duración y conexión Bluetooth 5.2
+                            para una conectividad estable.</p>
                     </div>
                     <div class="feature-card p-6 md:p-8 rounded-2xl reveal-feature">
                         <div class="kings-gradient-text mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 md:h-16 md:w-16 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 md:h-16 md:w-16 mx-auto"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                             </svg>
                         </div>
                         <h3 class="text-3xl md:text-4xl font-bold mb-2 text-white">MONITOREO DE SALUD</h3>
-                        <p class="text-gray-400 text-sm md:text-base">Mide tu oxígeno en sangre, ritmo cardiaco y seguimiento del sueño.</p>
+                        <p class="text-gray-400 text-sm md:text-base">Mide tu oxígeno en sangre, ritmo cardiaco y
+                            seguimiento del sueño.</p>
                     </div>
                 </div>
             </div>
@@ -436,29 +434,39 @@
         <!-- FAQ Section -->
         <section id="faq" class="py-16 sm:py-24">
             <div class="container mx-auto px-4 max-w-3xl">
-                <h2 class="text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade" style="color: #f4af23;">PREGUNTAS FRECUENTES
+                <h2 class="text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade" style="color: #f4af23;">
+                    PREGUNTAS FRECUENTES
                 </h2>
                 <div class="space-y-4">
                     <details class="info-panel p-4 md:p-6 rounded-lg reveal-fade">
-                        <summary class="flex justify-between items-center cursor-pointer font-primary text-2xl md:text-3xl">
+                        <summary
+                            class="flex justify-between items-center cursor-pointer font-primary text-2xl md:text-3xl">
                             ¿Es compatible con mi celular?<span
                                 class="plus-icon text-orange-400 text-3xl transition-transform duration-300">+</span>
                         </summary>
-                        <p class="mt-4 text-gray-400 text-sm md:text-base">Sí, el smartwatch KLSW-01 es totalmente compatible con los sistemas operativos iOS y Android. Solo tienes que descargar la aplicación correspondiente para sincronizarlo y recibir notificaciones.</p>
+                        <p class="mt-4 text-gray-400 text-sm md:text-base">Sí, el smartwatch KLSW-01 es totalmente
+                            compatible con los sistemas operativos iOS y Android. Solo tienes que descargar la
+                            aplicación correspondiente para sincronizarlo y recibir notificaciones.</p>
                     </details>
                     <details class="info-panel p-4 md:p-6 rounded-lg reveal-fade">
-                        <summary class="flex justify-between items-center cursor-pointer font-primary text-2xl md:text-3xl">
+                        <summary
+                            class="flex justify-between items-center cursor-pointer font-primary text-2xl md:text-3xl">
                             ¿Puedo nadar con él?<span
                                 class="plus-icon text-orange-400 text-3xl transition-transform duration-300">+</span>
                         </summary>
-                        <p class="mt-4 text-gray-400 text-sm md:text-base">El reloj KLSW-01 cuenta con una certificación IP68, lo que significa que es resistente a la inmersión en agua y al polvo. Es perfecto para salpicaduras, lluvia y actividades intensas, pero no se recomienda para buceo profundo.</p>
+                        <p class="mt-4 text-gray-400 text-sm md:text-base">El reloj KLSW-01 cuenta con una certificación
+                            IP68, lo que significa que es resistente a la inmersión en agua y al polvo. Es perfecto para
+                            salpicaduras, lluvia y actividades intensas, pero no se recomienda para buceo profundo.</p>
                     </details>
                     <details class="info-panel p-4 md:p-6 rounded-lg reveal-fade">
-                        <summary class="flex justify-between items-center cursor-pointer font-primary text-2xl md:text-3xl">
+                        <summary
+                            class="flex justify-between items-center cursor-pointer font-primary text-2xl md:text-3xl">
                             ¿La correa se cambia?<span
                                 class="plus-icon text-orange-400 text-3xl transition-transform duration-300">+</span>
                         </summary>
-                        <p class="mt-4 text-gray-400 text-sm md:text-base">¡Por supuesto! El modelo KLSW-01 incluye 2 juegos de extensibles de silicón para que puedas personalizar el estilo de tu reloj según la ocasión.</p>
+                        <p class="mt-4 text-gray-400 text-sm md:text-base">¡Por supuesto! El modelo KLSW-01 incluye 2
+                            juegos de extensibles de silicón para que puedas personalizar el estilo de tu reloj según la
+                            ocasión.</p>
                     </details>
                 </div>
             </div>
@@ -467,7 +475,8 @@
         <!-- Reviews Grid Section -->
         <section id="reviews" class="py-16 sm:py-24">
             <div class="container mx-auto px-4">
-                <h2 class="text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade" style="color: #f4af23;">LO QUE DICEN NUESTROS
+                <h2 class="text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade" style="color: #f4af23;">LO QUE
+                    DICEN NUESTROS
                     CLIENTES</h2>
                 <div id="reviews-grid-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     <!-- Reseñas se inyectan aquí -->
@@ -478,13 +487,50 @@
         <!-- Footer -->
         <footer class="text-center py-10" style="background-color: #f4af23;">
             <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade" style="color: #000000;">REDES
+                    SOCIALES</h2>
                 <div class="w-32 mx-auto mb-6"><img src="assets/logos/LOGOS1-08.png" alt="KLA Logo"></div>
                 <div class="flex justify-center flex-wrap gap-x-6 gap-y-2 mb-6">
-                    <a href="#" class="text-black hover:text-gray-800 transition-colors">Facebook</a>
-                    <a href="#" class="text-black hover:text-gray-800 transition-colors">Instagram</a>
-                    <a href="#" class="text-black hover:text-gray-800 transition-colors">X</a>
-                    <a href="#" class="text-black hover:text-gray-800 transition-colors">YouTube</a>
-                    <a href="#" class="text-black hover:text-gray-800 transition-colors">Twitch</a>
+                    <a href="https://www.facebook.com/share/1C9kiT4brV/" target="_blank"
+                        class="text-black hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/kingsleagueamericas?igsh=NzBxd3hpcDBmbnR0" target="_blank"
+                        class="text-black hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.069-4.849.069-3.205 0-3.584-.012-4.849-.069-3.225-.149-4.771-1.664-4.919-4.919-.058-1.265-.069-1.644-.069-4.849 0-3.204.012-3.584.069-4.849.149-3.252 1.664-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163zm0 1.802c-3.116 0-3.472.012-4.69.068-2.61.121-3.832 1.344-3.953 3.953-.056 1.218-.067 1.574-.067 4.69s.011 3.472.067 4.69c.121 2.61 1.344 3.832 3.953 3.953 1.218.056 1.574.067 4.69.067s3.472-.011 4.69-.067c2.61-.121 3.832-1.344 3.953-3.953.056-1.218.067-1.574.067-4.69s-.011-3.472-.067-4.69c-.121-2.61-1.344-3.832-3.953-3.953C15.472 3.975 15.116 3.965 12 3.965zM12 7.178c-2.652 0-4.822 2.17-4.822 4.822s2.17 4.822 4.822 4.822 4.822-2.17 4.822-4.822S14.652 7.178 12 7.178zm0 7.848c-1.664 0-3.022-1.358-3.022-3.022s1.358-3.022 3.022-3.022 3.022 1.358 3.022 3.022-1.358 3.022-3.022 3.022zm4.908-7.856c-.767 0-1.388.621-1.388 1.388s.621 1.388 1.388 1.388 1.388-.621 1.388-1.388-.621-1.388-1.388-1.388z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://x.com/kingsleague_am?t=XsAOUUeuQqy-6TNlteVVjw&s=08" target="_blank"
+                        class="text-black hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://youtube.com/@kingsleagueamericas?si=NC-5HNlLRi3A68ZM" target="_blank"
+                        class="text-black hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M21.582 7.24c-.24-.89-1.02-1.57-1.92-1.72C17.69 5 12 5 12 5s-5.69 0-7.662.52c-.9.15-1.68.83-1.92 1.72C2 8.35 2 12 2 12s0 3.65.418 4.76c.24.89 1.02 1.57 1.92 1.72C6.31 19 12 19 12 19s5.69 0 7.662-.52c.9-.15 1.68-.83 1.92-1.72C22 15.65 22 12 22 12s0-3.65-.418-4.76zM9.75 15.5V8.5l6.5 3.5-6.5 3.5z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://www.twitch.tv/kingsleagueamericas?sr=a" target="_blank"
+                        class="text-black hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M2.149 0L.537 4.176v15.648h5.064v3.653h2.92l3.652-3.653h4.628L23.463 12V0H2.149zm2.149 2.149h17.016v8.696l-3.653 3.652h-5.063l-3.652 3.652v-3.652H4.298V2.149zM9.362 6.324h2.149v6.087H9.362V6.324zm6.087 0h2.149v6.087h-2.149V6.324z">
+                            </path>
+                        </svg>
+                    </a>
                 </div>
                 <p class="text-gray-800 text-sm">&copy; 2025 Kings League Américas. Todos los derechos reservados.</p>
             </div>
@@ -530,21 +576,23 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="mb-12">
-                    <h3 class="text-3xl md:text-4xl font-bold text-white mb-4 border-b-2 border-orange-500/50 pb-2 font-primary">
+                    <h3
+                        class="text-3xl md:text-4xl font-bold text-white mb-4 border-b-2 border-orange-500/50 pb-2 font-primary">
                         Galería</h3>
                     <div id="modal-thumbnail-gallery" class="grid grid-cols-3 sm:grid-cols-5 gap-2 sm:gap-4"></div>
                 </div>
-                
+
                 <!-- Specifications Section -->
                 <div class="mb-12">
-                     <h3 class="text-3xl md:text-4xl font-bold text-white mb-4 border-b-2 border-orange-500/50 pb-2 font-primary">
+                    <h3
+                        class="text-3xl md:text-4xl font-bold text-white mb-4 border-b-2 border-orange-500/50 pb-2 font-primary">
                         Características
-                     </h3>
-                     <ul id="modal-specifications" class="list-disc list-inside text-gray-300 space-y-2">
+                    </h3>
+                    <ul id="modal-specifications" class="list-disc list-inside text-gray-300 space-y-2">
                         <!-- Specs se inyectan aquí -->
-                     </ul>
+                    </ul>
                 </div>
                 <div>
                     <div>
@@ -586,11 +634,11 @@
         document.addEventListener('DOMContentLoaded', () => {
             // --- DATA ---
             const productsData = [
-                { 
-                    id: 1, 
-                    sku: 'KLSW-01', 
-                    price: 1299.00, 
-                    fullPrice: 3998.00, 
+                {
+                    id: 1,
+                    sku: 'KLSW-01',
+                    price: 1299.00,
+                    fullPrice: 3998.00,
                     mainImage: 'assets/relojes/klsw-01/klsw-01 (1).png',
                     gallery: [
                         'assets/relojes/klsw-01/klsw-01 (1).png',
@@ -613,11 +661,11 @@
                         "Incluye: Smartwatch, cable de carga, manual y 2 juegos de extensibles."
                     ]
                 },
-                { 
-                    id: 2, 
-                    sku: 'STKL-01', 
-                    price: 999.00, 
-                    fullPrice: 2398.00, 
+                {
+                    id: 2,
+                    sku: 'STKL-01',
+                    price: 999.00,
+                    fullPrice: 2398.00,
                     mainImage: 'assets/relojes/stkl-01/stkl-01 (1).jpg',
                     gallery: [
                         'assets/relojes/stkl-01/stkl-01 (1).jpg',
@@ -667,17 +715,17 @@
             ];
 
             const teams = [
-                { name: 'Peluche Caligari', logo: 'assets/escudos/PelucheCaligariFC.webp' }, 
+                { name: 'Peluche Caligari', logo: 'assets/escudos/PelucheCaligariFC.webp' },
                 { name: 'Raniza FC', logo: 'assets/escudos/RanizaFC.webp' },
-                { name: 'Real Titán', logo: 'assets/escudos/TitanFC.webp' }, 
+                { name: 'Real Titán', logo: 'assets/escudos/TitanFC.webp' },
                 { name: 'Muchachos FC', logo: 'assets/escudos/MuchachosFC.webp' },
-                { name: 'West Santos FC', logo: 'assets/escudos/WestSantosFC.webp' }, 
+                { name: 'West Santos FC', logo: 'assets/escudos/WestSantosFC.webp' },
                 { name: 'Olimpo United', logo: 'assets/escudos/OlimpoUnitedFC.webp' },
-                { name: 'Galácticos del Caribe', logo: 'assets/escudos/GalacticosDelCaribeFC.webp' }, 
+                { name: 'Galácticos del Caribe', logo: 'assets/escudos/GalacticosDelCaribeFC.webp' },
                 { name: 'Club de Cuervos', logo: 'assets/escudos/ClubDeCuervosFC.webp' },
-                { name: 'Los Aliens FC', logo: 'assets/escudos/LosAliens.webp' }, 
+                { name: 'Los Aliens FC', logo: 'assets/escudos/LosAliens.webp' },
                 { name: 'Atlético Parceros FC', logo: 'assets/escudos/ParcerosFC.webp' },
-                { name: 'Persas FC', logo: 'assets/escudos/PersasFC.webp' }, 
+                { name: 'Persas FC', logo: 'assets/escudos/PersasFC.webp' },
                 { name: 'Los Chamos FC', logo: 'assets/escudos/ChamosFC.webp' },
             ];
 
@@ -848,14 +896,15 @@
                 presidentsGrid.innerHTML = '';
                 presidents.forEach((president) => {
                     const card = document.createElement('div');
-                    card.className = 'president-card relative rounded-lg overflow-hidden shadow-lg p-4 flex flex-col justify-end h-64 sm:h-80';
+                    card.className = 'president-card relative rounded-lg overflow-hidden shadow-lg flex flex-col h-96'; // Taller card
                     card.innerHTML = `
-                    <img src="${president.background}" alt="${president.name}" class="absolute inset-0 w-full h-full object-cover -z-10 object-top">
-                    <img src="${president.logo}" alt="${president.team}" class="president-logo">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                    <div class="relative z-10">
-                        <h3 class="text-xl sm:text-2xl font-primary text-white leading-tight">${president.name}</h3>
-                        <p class="text-base sm:text-lg kings-gradient-text font-bold">${president.team}</p>
+                    <div class="flex-grow bg-cover bg-center" style="background-image: url('${president.background}')"></div>
+                    <div class="p-4 bg-black/50 flex justify-between items-center">
+                        <div>
+                            <h3 class="text-xl sm:text-2xl font-primary text-white leading-tight">${president.name}</h3>
+                            <p class="text-base sm:text-lg kings-gradient-text font-bold">${president.team}</p>
+                        </div>
+                        <img src="${president.logo}" alt="${president.team}" class="w-16 h-16">
                     </div>`;
                     presidentsGrid.appendChild(card);
                 });
@@ -1043,12 +1092,44 @@
                 });
             });
 
+            // --- TEAM TICKER ANIMATION ---
+            const tickerTrack = getEl('team-ticker-track');
+            const logoItems = tickerTrack.children;
+            let position = 0;
+            const speed = 0.5;
+
+            function animateTeamTicker() {
+                position -= speed;
+                if (position <= - (tickerTrack.scrollWidth / 2)) {
+                    position = 0;
+                }
+                tickerTrack.style.transform = `translateX(${position}px)`;
+
+                const screenCenter = window.innerWidth / 2;
+                for (let item of logoItems) {
+                    const rect = item.getBoundingClientRect();
+                    const itemCenter = rect.left + rect.width / 2;
+                    const distanceFromCenter = Math.abs(screenCenter - itemCenter);
+                    const img = item.querySelector('img');
+
+                    if (distanceFromCenter < (rect.width / 2) + 20) {
+                        img.classList.add('is-active');
+                    } else {
+                        img.classList.remove('is-active');
+                    }
+                }
+
+                requestAnimationFrame(animateTeamTicker);
+            }
+
+
             // --- INITIALIZATION ---
             showSlide(0); // Initialize carousel
             startAutoSlide(); // Start automatic sliding
             renderProducts(products);
             renderPresidents();
             renderTeamTicker();
+            animateTeamTicker(); // Start team ticker animation
             renderReviews();
 
             // --- SCROLL ANIMATIONS ---
