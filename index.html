@@ -870,14 +870,15 @@
                 presidentsGrid.innerHTML = '';
                 presidents.forEach((president) => {
                     const card = document.createElement('div');
-                    // Changed height to be more flexible on mobile
-                    card.className = 'president-card relative rounded-lg overflow-hidden shadow-lg flex flex-col h-80 sm:h-96';
+                    // *** CAMBIO PRINCIPAL AQUÍ ***
+                    // Altura reducida en móvil (h-64) y ajustada en pantallas más grandes (sm:h-80)
+                    card.className = 'president-card relative rounded-lg overflow-hidden shadow-lg flex flex-col h-64 sm:h-80'; 
                     card.innerHTML = `
                     <div class="flex-grow bg-cover bg-center" style="background-image: url('${president.background}')"></div>
-                    <div class="p-3 bg-black/50 flex justify-between items-center">
+                    <div class="p-2 bg-black/50 flex justify-between items-center">
                         <div>
-                            <h3 class="text-lg sm:text-xl font-primary text-white leading-tight">${president.name}</h3>
-                            <p class="text-base sm:text-lg kings-gradient-text font-bold">${president.team}</p>
+                            <h3 class="text-md sm:text-lg font-primary text-white leading-tight">${president.name}</h3>
+                            <p class="text-sm sm:text-base kings-gradient-text font-bold">${president.team}</p>
                         </div>
                         <img src="${president.logo}" alt="${president.team}" class="w-12 h-12 sm:w-16 sm:h-16">
                     </div>`;
