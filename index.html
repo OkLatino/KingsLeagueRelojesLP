@@ -34,6 +34,15 @@
             font-style: normal;
         }
 
+        /* *** NUEVA FUENTE AÑADIDA *** */
+        @font-face {
+            font-family: 'Matrice';
+            /* Se asume la extensión .otf, ajústala si es .ttf u otra */
+            src: url('assets/fuentes/SECUNDARIA/Termina Test/Matrice-Black.otf') format('opentype');
+            font-weight: 900; /* Black */
+            font-style: normal;
+        }
+
         @font-face {
             font-family: 'Archivo';
             src: url('assets/fuentes/TERCERA/Archivo_Condensed-Bold.ttf') format('truetype');
@@ -55,14 +64,26 @@
         }
 
         h1,
-        h2,
-        h3,
+        h3, /* h2 se quita para un control más específico */
         .font-primary {
             font-family: 'Termina Test', sans-serif;
             text-transform: uppercase;
             letter-spacing: 0.05em;
             font-weight: 900;
             /* Usamos Termina Test Black por defecto para títulos */
+        }
+
+        /* Estilo específico para h2 para poder sobreescribirlo fácilmente */
+        h2 {
+            font-family: 'Termina Test', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 900;
+        }
+
+        /* *** NUEVA CLASE PARA FUENTE SECUNDARIA *** */
+        .font-secondary {
+            font-family: 'Matrice', sans-serif;
         }
 
         /* Video de Fondo */
@@ -146,8 +167,7 @@
         .product-card,
         .president-card,
         .info-panel {
-            background-color: rgba(26, 26, 26, 0.8);
-            /* Ligeramente más transparente */
+            background-color: rgba(26, 26, 26, 0.8); /* Ligeramente más transparente */
             border: 1px solid rgba(75, 75, 75, 0.5);
             backdrop-filter: blur(10px);
             transition: all 0.3s ease-in-out;
@@ -241,7 +261,7 @@
         #search-input {
             transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
         }
-
+        
         /* Estilos para Menú Móvil */
         #mobile-menu {
             transition: transform 0.3s ease-in-out;
@@ -249,15 +269,11 @@
 
         /* Estilo para ocultar scrollbar en carrusel horizontal */
         .horizontal-scroll {
-            -ms-overflow-style: none;
-            /* IE and Edge */
-            scrollbar-width: none;
-            /* Firefox */
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
         }
-
         .horizontal-scroll::-webkit-scrollbar {
-            display: none;
-            /* Chrome, Safari and Opera */
+            display: none; /* Chrome, Safari and Opera */
         }
     </style>
 </head>
@@ -265,7 +281,7 @@
 <body class="bg-black">
 
     <!-- Video de Fondo -->
-    <video autoplay muted loop id="background-video">
+    <video autoplay muted loop playsinline id="background-video">
         <source src="assets/logos/FONDOWEB.mp4" type="video/mp4">
         Tu navegador no soporta videos HTML5.
     </video>
@@ -291,7 +307,7 @@
                         </svg>
                     </button>
                     <input id="search-input" type="text" placeholder="Buscar..."
-                        class="bg-gray-800 text-white rounded-full py-1 absolute right-0 w-0 focus:w-48 focus:px-4 focus:pl-10 focus:outline-none focus:ring-2 focus:ring-black">
+                           class="bg-gray-800 text-white rounded-full py-1 absolute right-0 w-0 focus:w-48 focus:px-4 focus:pl-10 focus:outline-none focus:ring-2 focus:ring-black">
                 </div>
                 <button id="cart-btn" class="relative p-2" style="color: #1a1a1a;">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -327,8 +343,8 @@
         <div class="container mx-auto px-4 text-center">
             <img src="assets/logos/LGB-10.png" alt="Logo Hero" class="h-40 sm:h-56 md:h-80 mx-auto mb-4 reveal-up">
             <h1 class="text-4xl sm:text-6xl md:text-8xl font-bold mb-4 text-white reveal-up">EL RELOJ DE LA LIGA</h1>
-            <h2 class="text-2xl sm:text-3xl md:text-4xl kings-gradient-text mb-8 reveal-up">LA PRECISIÓN DE LOS REYES
-            </h2>
+            <!-- *** CLASE .font-secondary APLICADA *** -->
+            <h2 class="text-2xl sm:text-3xl md:text-4xl kings-gradient-text mb-8 reveal-up font-secondary">LA PRECISIÓN DE LOS REYES</h2>
 
             <!-- Video Carousel -->
             <div id="hero-carousel"
@@ -372,15 +388,13 @@
         <!-- Presidents Section -->
         <section id="presidents" class="py-16 sm:py-24">
             <div class="container mx-auto px-4">
-                <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade"
-                    style="color: #f4af23;">LLEVA
+                <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade" style="color: #f4af23;">LLEVA
                     EL ESCUDO DE TU
                     PRESIDENTE</h2>
             </div>
             <!-- Contenedor para el scroll horizontal en móvil y la cuadrícula en escritorio -->
             <div class="w-full">
-                <div id="presidents-grid"
-                    class="flex overflow-x-auto horizontal-scroll gap-4 px-4 pb-4 md:grid md:grid-cols-4 md:gap-8 md:container md:mx-auto md:p-0">
+                <div id="presidents-grid" class="flex overflow-x-auto horizontal-scroll gap-4 px-4 pb-4 md:grid md:grid-cols-4 md:gap-8 md:container md:mx-auto md:p-0">
                     <!-- Presidentes se inyectan aquí vía JavaScript -->
                 </div>
             </div>
@@ -398,8 +412,7 @@
         <!-- Shop Section -->
         <section id="shop" class="py-16 sm:py-24">
             <div class="container mx-auto px-4">
-                <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade"
-                    style="color: #f4af23;">
+                <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade" style="color: #f4af23;">
                     NUESTROS RELOJES</h2>
                 <div id="product-grid" class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8">
                     <!-- Productos se inyectan aquí -->
@@ -410,8 +423,7 @@
         <!-- Features Section -->
         <section id="features" class="py-16 sm:py-24">
             <div class="container mx-auto px-4 text-center">
-                <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 reveal-fade" style="color: #f4af23;">
-                    FUNCIONALIDAD SIN
+                <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 reveal-fade" style="color: #f4af23;">FUNCIONALIDAD SIN
                     LÍMITES</h2>
                 <p class="max-w-3xl mx-auto text-gray-400 mb-12 reveal-fade px-4">Descubre el Smartwatch Edición Kings
                     League, diseñado para verdaderos fanáticos del deporte y la innovación.</p>
@@ -457,8 +469,7 @@
         <!-- FAQ Section -->
         <section id="faq" class="py-16 sm:py-24">
             <div class="container mx-auto px-4 max-w-3xl">
-                <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade"
-                    style="color: #f4af23;">
+                <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade" style="color: #f4af23;">
                     PREGUNTAS FRECUENTES
                 </h2>
                 <div class="space-y-4">
@@ -499,8 +510,7 @@
         <!-- Reviews Grid Section -->
         <section id="reviews" class="py-16 sm:py-24">
             <div class="container mx-auto px-4">
-                <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade"
-                    style="color: #f4af23;">LO QUE
+                <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade" style="color: #f4af23;">LO QUE
                     DICEN NUESTROS
                     CLIENTES</h2>
                 <div id="reviews-grid-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -512,8 +522,7 @@
         <!-- Footer -->
         <footer class="text-center py-10" style="background-color: #f4af23;">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade"
-                    style="color: #000000;">REDES
+                <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade" style="color: #000000;">REDES
                     SOCIALES</h2>
                 <div class="w-32 mx-auto mb-6"><img src="assets/logos/LOGOS1-08.png" alt="KLA Logo"></div>
                 <div class="flex justify-center flex-wrap gap-x-4 gap-y-2 sm:gap-x-6 mb-6">
@@ -576,8 +585,7 @@
                 <div class="grid md:grid-cols-2 gap-8 mb-8">
                     <div><img id="modal-main-image" src="" alt="Product Image" class="w-full rounded-lg mb-4"></div>
                     <div class="flex flex-col justify-center">
-                        <h2 id="modal-product-name"
-                            class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 font-primary">
+                        <h2 id="modal-product-name" class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 font-primary">
                         </h2>
                         <div id="modal-product-price" class="flex items-baseline gap-4 mb-6">
                             <!-- Precios se inyectan aquí -->
@@ -658,7 +666,8 @@
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
+        // *** CAMBIO CLAVE: USAR 'load' EN LUGAR DE 'DOMContentLoaded' ***
+        window.addEventListener('load', () => {
             // --- DATA ---
             const productsData = [
                 {
@@ -924,7 +933,6 @@
                 presidentsGrid.innerHTML = '';
                 presidents.forEach((president) => {
                     const card = document.createElement('div');
-                    // *** TARJETA REDISEÑADA ***
                     card.className = 'president-card relative rounded-lg overflow-hidden shadow-lg bg-cover bg-center w-64 md:w-auto h-96 flex-shrink-0';
                     card.style.backgroundImage = `url('${president.background}')`;
 
@@ -1093,20 +1101,20 @@
             quantityMinus.addEventListener('click', () => { if (parseInt(quantityInput.value) > 1) quantityInput.value = parseInt(quantityInput.value) - 1; });
 
             searchBtn.addEventListener('click', (e) => {
-                if (!searchInput.classList.contains('w-48')) {
+                if(!searchInput.classList.contains('w-48')) {
                     searchInput.classList.add('w-48', 'px-4', 'pl-10');
                     searchInput.focus();
                 } else {
-                    if (searchInput.value === '') {
-                        searchInput.classList.remove('w-48', 'px-4', 'pl-10');
+                    if(searchInput.value === '') {
+                         searchInput.classList.remove('w-48', 'px-4', 'pl-10');
                     }
                 }
             });
 
             searchInput.addEventListener('blur', () => {
-                if (searchInput.value === '') {
-                    searchInput.classList.remove('w-48', 'px-4', 'pl-10');
-                }
+                 if(searchInput.value === '') {
+                     searchInput.classList.remove('w-48', 'px-4', 'pl-10');
+                 }
             });
 
             searchInput.addEventListener('input', (e) => {
