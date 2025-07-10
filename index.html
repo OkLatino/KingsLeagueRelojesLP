@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KLA Watches - La Tienda Oficial de Relojes de la Kings League Américas</title>
 
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- ScrollReveal JS for animations -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <style>
@@ -146,7 +144,7 @@
         .product-card,
         .president-card,
         .info-panel {
-            background-color: #1a1a1a;
+            background-color: rgba(26, 26, 26, 0.8); /* Ligeramente más transparente */
             border: 1px solid rgba(75, 75, 75, 0.5);
             backdrop-filter: blur(10px);
             transition: all 0.3s ease-in-out;
@@ -238,9 +236,9 @@
         }
 
         #search-input {
-            transition: width 0.3s ease-in-out;
+            transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
         }
-
+        
         /* Estilos para Menú Móvil */
         #mobile-menu {
             transition: transform 0.3s ease-in-out;
@@ -250,18 +248,16 @@
 
 <body class="bg-black">
 
-    <!-- Video de Fondo -->
     <video autoplay muted loop id="background-video">
         <source src="assets/logos/FONDOWEB.mp4" type="video/mp4">
         Tu navegador no soporta videos HTML5.
     </video>
 
-    <!-- Header -->
     <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-colors duration-500"
         style="background-color: #f4af23;">
         <nav class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
             <div class="header-logo">
-                <img src="assets/logos/LGB-11.png" alt="KLA Logo" class="w-full h-auto">
+                <a href="#"><img src="assets/logos/LGB-11.png" alt="KLA Logo" class="w-full h-auto"></a>
             </div>
             <div class="hidden md:flex items-center space-x-8 font-primary text-lg">
                 <a href="#shop" class="nav-link">Tienda</a>
@@ -269,14 +265,15 @@
                 <a href="#reviews" class="nav-link">Reseñas</a>
             </div>
             <div class="flex items-center space-x-2 sm:space-x-4">
-                <div class="relative">
-                    <input id="search-input" type="text" placeholder="Buscar..."
-                        class="bg-gray-800 text-white rounded-full px-4 py-1 w-0 focus:w-32 sm:w-48 focus:outline-none focus:ring-2 focus:ring-black">
-                    <button id="search-btn" class="p-2" style="color: #1a1a1a;"><svg class="w-6 h-6" fill="none"
-                            stroke="currentColor" viewBox="0 0 24 24">
+                <div class="relative flex items-center">
+                    <button id="search-btn" class="p-2 z-10" style="color: #1a1a1a;">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                        </svg></button>
+                        </svg>
+                    </button>
+                    <input id="search-input" type="text" placeholder="Buscar..."
+                           class="bg-gray-800 text-white rounded-full py-1 absolute right-0 w-0 focus:w-48 focus:px-4 focus:pl-10 focus:outline-none focus:ring-2 focus:ring-black">
                 </div>
                 <button id="cart-btn" class="relative p-2" style="color: #1a1a1a;">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -296,7 +293,6 @@
                 </button>
             </div>
         </nav>
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="md:hidden absolute top-full left-0 w-full transform -translate-x-full"
             style="background-color: rgba(244, 175, 35, 0.95);">
             <div class="flex flex-col items-center space-y-4 py-4 font-primary text-xl">
@@ -307,45 +303,38 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="pt-32 pb-16 bg-transparent">
         <div class="container mx-auto px-4 text-center">
-            <img src="assets/logos/LGB-10.png" alt="Logo Hero" class="h-48 sm:h-64 md:h-80 mx-auto mb-4 reveal-up">
-            <h1 class="text-5xl md:text-8xl font-bold mb-4 text-white reveal-up">EL RELOJ DE LA LIGA</h1>
-            <h2 class="text-3xl md:text-4xl kings-gradient-text mb-8 reveal-up">LA PRECISIÓN DE LOS REYES</h2>
+            <img src="assets/logos/LGB-10.png" alt="Logo Hero" class="h-40 sm:h-56 md:h-80 mx-auto mb-4 reveal-up">
+            <h1 class="text-4xl sm:text-6xl md:text-8xl font-bold mb-4 text-white reveal-up">EL RELOJ DE LA LIGA</h1>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl kings-gradient-text mb-8 reveal-up">LA PRECISIÓN DE LOS REYES</h2>
 
-            <!-- Video Carousel -->
             <div id="hero-carousel"
                 class="max-w-4xl mx-auto reveal-up relative overflow-hidden rounded-2xl border-2 sm:border-4">
                 <div id="hero-carousel-track" class="flex transition-transform duration-500 ease-in-out">
-                    <!-- Los videos se inyectarán aquí por JavaScript -->
-                </div>
+                    </div>
 
-                <!-- Botones de Navegación -->
                 <button id="prev-slide-btn"
-                    class="absolute top-1/2 left-2 sm:left-4 -translate-y-1/2 bg-black/30 text-white p-2 rounded-full hover:bg-black/50 transition-colors z-10">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    class="absolute top-1/2 left-2 sm:left-4 -translate-y-1/2 bg-black/30 text-white p-1 sm:p-2 rounded-full hover:bg-black/50 transition-colors z-10">
+                    <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
                         </path>
                     </svg>
                 </button>
                 <button id="next-slide-btn"
-                    class="absolute top-1/2 right-2 sm:right-4 -translate-y-1/2 bg-black/30 text-white p-2 rounded-full hover:bg-black/50 transition-colors z-10">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    class="absolute top-1/2 right-2 sm:right-4 -translate-y-1/2 bg-black/30 text-white p-1 sm:p-2 rounded-full hover:bg-black/50 transition-colors z-10">
+                    <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                     </svg>
                 </button>
 
-                <!-- Puntos de Navegación -->
                 <div id="carousel-dots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-10">
-                    <!-- Los puntos se inyectarán aquí por JavaScript -->
-                </div>
+                    </div>
             </div>
 
-            <!-- Botón de compra principal -->
             <div class="mt-8 text-center reveal-up">
                 <button id="buy-main-product-btn"
-                    class="kings-gradient-bg text-white font-primary text-2xl md:text-3xl py-3 px-10 rounded-lg uppercase transition-transform hover:scale-105 pulse-btn">
+                    class="kings-gradient-bg text-white font-primary text-xl sm:text-2xl md:text-3xl py-3 px-8 sm:px-10 rounded-lg uppercase transition-transform hover:scale-105 pulse-btn">
                     HAZLO TUYO
                 </button>
             </div>
@@ -353,44 +342,37 @@
     </section>
 
     <main style="background-color: #000000; position: relative; z-index: 1;">
-        <!-- Presidents Section -->
         <section id="presidents" class="py-16 sm:py-24">
             <div class="container mx-auto px-4">
-                <h2 class="text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade" style="color: #f4af23;">LLEVA
+                <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade" style="color: #f4af23;">LLEVA
                     EL ESCUDO DE TU
                     PRESIDENTE</h2>
-                <div id="presidents-grid" class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
-                    <!-- Presidentes se inyectan aquí -->
-                </div>
+                <div id="presidents-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+                    </div>
             </div>
         </section>
 
-        <!-- Team Ticker Section -->
         <section id="teams-ticker" class="py-8 bg-black/20">
             <div class="team-ticker">
                 <div id="team-ticker-track" class="team-ticker-track">
-                    <!-- Logos se inyectan aquí -->
-                </div>
+                    </div>
             </div>
         </section>
 
-        <!-- Shop Section -->
         <section id="shop" class="py-16 sm:py-24">
             <div class="container mx-auto px-4">
-                <h2 class="text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade" style="color: #f4af23;">
+                <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade" style="color: #f4af23;">
                     NUESTROS RELOJES</h2>
                 <div id="product-grid" class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8">
-                    <!-- Productos se inyectan aquí -->
-                </div>
+                    </div>
             </div>
         </section>
 
-        <!-- Features Section -->
         <section id="features" class="py-16 sm:py-24">
             <div class="container mx-auto px-4 text-center">
-                <h2 class="text-4xl md:text-6xl font-bold mb-4 reveal-fade" style="color: #f4af23;">FUNCIONALIDAD SIN
+                <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 reveal-fade" style="color: #f4af23;">FUNCIONALIDAD SIN
                     LÍMITES</h2>
-                <p class="max-w-3xl mx-auto text-gray-400 mb-12 reveal-fade">Descubre el Smartwatch Edición Kings
+                <p class="max-w-3xl mx-auto text-gray-400 mb-12 reveal-fade px-4">Descubre el Smartwatch Edición Kings
                     League, diseñado para verdaderos fanáticos del deporte y la innovación.</p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="feature-card p-6 md:p-8 rounded-2xl reveal-feature">
@@ -401,7 +383,7 @@
                                     d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                             </svg>
                         </div>
-                        <h3 class="text-3xl md:text-4xl font-bold mb-2 text-white">CAJA RESISTENTE</h3>
+                        <h3 class="text-2xl md:text-4xl font-bold mb-2 text-white">CAJA RESISTENTE</h3>
                         <p class="text-gray-400 text-sm md:text-base">Fabricado con aleación de Zinc+ABS y protección
                             IP68 contra agua y polvo.</p>
                     </div>
@@ -411,9 +393,9 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M13 10V3L4 14h7v7l9-11h-7z" />
                             </svg></div>
-                        <h3 class="text-3xl md:text-4xl font-bold mb-2 text-white">BATERÍA DE 600mAh</h3>
+                        <h3 class="text-2xl md:text-4xl font-bold mb-2 text-white">BATERÍA DE 600mAh</h3>
                         <p class="text-gray-400 text-sm md:text-base">Batería de larga duración y conexión Bluetooth 5.2
-                            para una conectividad estable.</p>
+                            para una conectividad stable.</p>
                     </div>
                     <div class="feature-card p-6 md:p-8 rounded-2xl reveal-feature">
                         <div class="kings-gradient-text mb-4">
@@ -423,7 +405,7 @@
                                     d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                             </svg>
                         </div>
-                        <h3 class="text-3xl md:text-4xl font-bold mb-2 text-white">MONITOREO DE SALUD</h3>
+                        <h3 class="text-2xl md:text-4xl font-bold mb-2 text-white">MONITOREO DE SALUD</h3>
                         <p class="text-gray-400 text-sm md:text-base">Mide tu oxígeno en sangre, ritmo cardiaco y
                             seguimiento del sueño.</p>
                     </div>
@@ -431,16 +413,15 @@
             </div>
         </section>
 
-        <!-- FAQ Section -->
         <section id="faq" class="py-16 sm:py-24">
             <div class="container mx-auto px-4 max-w-3xl">
-                <h2 class="text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade" style="color: #f4af23;">
+                <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade" style="color: #f4af23;">
                     PREGUNTAS FRECUENTES
                 </h2>
                 <div class="space-y-4">
                     <details class="info-panel p-4 md:p-6 rounded-lg reveal-fade">
                         <summary
-                            class="flex justify-between items-center cursor-pointer font-primary text-2xl md:text-3xl">
+                            class="flex justify-between items-center cursor-pointer font-primary text-xl sm:text-2xl md:text-3xl">
                             ¿Es compatible con mi celular?<span
                                 class="plus-icon text-orange-400 text-3xl transition-transform duration-300">+</span>
                         </summary>
@@ -450,7 +431,7 @@
                     </details>
                     <details class="info-panel p-4 md:p-6 rounded-lg reveal-fade">
                         <summary
-                            class="flex justify-between items-center cursor-pointer font-primary text-2xl md:text-3xl">
+                            class="flex justify-between items-center cursor-pointer font-primary text-xl sm:text-2xl md:text-3xl">
                             ¿Puedo nadar con él?<span
                                 class="plus-icon text-orange-400 text-3xl transition-transform duration-300">+</span>
                         </summary>
@@ -460,7 +441,7 @@
                     </details>
                     <details class="info-panel p-4 md:p-6 rounded-lg reveal-fade">
                         <summary
-                            class="flex justify-between items-center cursor-pointer font-primary text-2xl md:text-3xl">
+                            class="flex justify-between items-center cursor-pointer font-primary text-xl sm:text-2xl md:text-3xl">
                             ¿La correa se cambia?<span
                                 class="plus-icon text-orange-400 text-3xl transition-transform duration-300">+</span>
                         </summary>
@@ -472,25 +453,22 @@
             </div>
         </section>
 
-        <!-- Reviews Grid Section -->
         <section id="reviews" class="py-16 sm:py-24">
             <div class="container mx-auto px-4">
-                <h2 class="text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade" style="color: #f4af23;">LO QUE
+                <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade" style="color: #f4af23;">LO QUE
                     DICEN NUESTROS
                     CLIENTES</h2>
                 <div id="reviews-grid-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Reseñas se inyectan aquí -->
-                </div>
+                    </div>
             </div>
         </section>
 
-        <!-- Footer -->
         <footer class="text-center py-10" style="background-color: #f4af23;">
             <div class="container mx-auto px-6">
-                <h2 class="text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade" style="color: #000000;">REDES
+                <h2 class="text-3xl sm:text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade" style="color: #000000;">REDES
                     SOCIALES</h2>
                 <div class="w-32 mx-auto mb-6"><img src="assets/logos/LOGOS1-08.png" alt="KLA Logo"></div>
-                <div class="flex justify-center flex-wrap gap-x-6 gap-y-2 mb-6">
+                <div class="flex justify-center flex-wrap gap-x-4 gap-y-2 sm:gap-x-6 mb-6">
                     <a href="https://www.facebook.com/share/1C9kiT4brV/" target="_blank"
                         class="text-black hover:text-white transition-colors">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -532,12 +510,11 @@
                         </svg>
                     </a>
                 </div>
-                <p class="text-gray-800 text-sm">&copy; 2025 Kings League Américas. Todos los derechos reservados.</p>
+                <p class="text-gray-800 text-sm">© 2025 Kings League Américas. Todos los derechos reservados.</p>
             </div>
         </footer>
     </main>
 
-    <!-- Product Modal -->
     <div id="product-modal"
         class="hidden fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center p-4">
         <div id="modal-content"
@@ -550,11 +527,10 @@
                 <div class="grid md:grid-cols-2 gap-8 mb-8">
                     <div><img id="modal-main-image" src="" alt="Product Image" class="w-full rounded-lg mb-4"></div>
                     <div class="flex flex-col justify-center">
-                        <h2 id="modal-product-name" class="text-4xl md:text-5xl font-bold text-white mb-2 font-primary">
+                        <h2 id="modal-product-name" class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 font-primary">
                         </h2>
                         <div id="modal-product-price" class="flex items-baseline gap-4 mb-6">
-                            <!-- Precios se inyectan aquí -->
-                        </div>
+                            </div>
                         <div class="mb-6">
                             <label class="block text-sm font-bold text-gray-400 mb-2">CANTIDAD</label>
                             <div class="flex items-center">
@@ -579,25 +555,23 @@
 
                 <div class="mb-12">
                     <h3
-                        class="text-3xl md:text-4xl font-bold text-white mb-4 border-b-2 border-orange-500/50 pb-2 font-primary">
+                        class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 border-b-2 border-orange-500/50 pb-2 font-primary">
                         Galería</h3>
                     <div id="modal-thumbnail-gallery" class="grid grid-cols-3 sm:grid-cols-5 gap-2 sm:gap-4"></div>
                 </div>
 
-                <!-- Specifications Section -->
                 <div class="mb-12">
                     <h3
-                        class="text-3xl md:text-4xl font-bold text-white mb-4 border-b-2 border-orange-500/50 pb-2 font-primary">
+                        class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 border-b-2 border-orange-500/50 pb-2 font-primary">
                         Características
                     </h3>
                     <ul id="modal-specifications" class="list-disc list-inside text-gray-300 space-y-2">
-                        <!-- Specs se inyectan aquí -->
-                    </ul>
+                        </ul>
                 </div>
                 <div>
                     <div>
                         <h3
-                            class="text-3xl md:text-4xl font-bold text-white mb-4 border-b-2 border-orange-500/50 pb-2 font-primary">
+                            class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 border-b-2 border-orange-500/50 pb-2 font-primary">
                             Reseñas</h3>
                         <div id="modal-reviews-container" class="space-y-6"></div>
                     </div>
@@ -606,7 +580,6 @@
         </div>
     </div>
 
-    <!-- Cart Modal -->
     <div id="cart-modal" class="hidden fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center p-4">
         <div id="cart-content"
             class="bg-black w-full max-w-2xl max-h-[90vh] rounded-2xl shadow-lg relative flex flex-col border-2 border-orange-500/50">
@@ -793,7 +766,8 @@
                 video.className = 'w-full h-auto';
                 video.muted = true;
                 video.loop = true;
-                video.playsInline = true;
+                video.playsInline = true; // Important for iOS
+                video.setAttribute('autoplay', ''); // Ensure autoplay
                 slide.appendChild(video);
                 heroCarouselTrack.appendChild(slide);
 
@@ -896,15 +870,16 @@
                 presidentsGrid.innerHTML = '';
                 presidents.forEach((president) => {
                     const card = document.createElement('div');
-                    card.className = 'president-card relative rounded-lg overflow-hidden shadow-lg flex flex-col h-96'; // Taller card
+                    // Changed height to be more flexible on mobile
+                    card.className = 'president-card relative rounded-lg overflow-hidden shadow-lg flex flex-col h-80 sm:h-96';
                     card.innerHTML = `
                     <div class="flex-grow bg-cover bg-center" style="background-image: url('${president.background}')"></div>
-                    <div class="p-4 bg-black/50 flex justify-between items-center">
+                    <div class="p-3 bg-black/50 flex justify-between items-center">
                         <div>
-                            <h3 class="text-xl sm:text-2xl font-primary text-white leading-tight">${president.name}</h3>
+                            <h3 class="text-lg sm:text-xl font-primary text-white leading-tight">${president.name}</h3>
                             <p class="text-base sm:text-lg kings-gradient-text font-bold">${president.team}</p>
                         </div>
-                        <img src="${president.logo}" alt="${president.team}" class="w-16 h-16">
+                        <img src="${president.logo}" alt="${president.team}" class="w-12 h-12 sm:w-16 sm:h-16">
                     </div>`;
                     presidentsGrid.appendChild(card);
                 });
@@ -922,7 +897,7 @@
                 reviewsData.forEach(review => {
                     const card = document.createElement('div');
                     card.className = 'review-card p-4 sm:p-6 rounded-lg flex flex-col gap-4';
-                    let stars = Array.from({ length: 5 }, (_, i) => `<span class="text-xl text-${i < review.rating ? 'yellow-400' : 'gray-500'}">&#9733;</span>`).join('');
+                    let stars = Array.from({ length: 5 }, (_, i) => `<span class="text-xl text-${i < review.rating ? 'yellow-400' : 'gray-500'}">★</span>`).join('');
                     card.innerHTML = `
                     <img src="${review.image}" alt="Review de ${review.author}" class="rounded-lg w-full h-auto object-cover">
                     <div>
@@ -940,8 +915,8 @@
                 if (!product) return;
                 modalName.textContent = product.name;
                 modalPrice.innerHTML = `
-                    <p class="text-3xl md:text-4xl font-bold kings-gradient-text">$${product.price.toFixed(2)}</p>
-                    <p class="text-xl md:text-2xl text-gray-400 line-through">$${product.fullPrice.toFixed(2)}</p>
+                    <p class="text-2xl sm:text-3xl md:text-4xl font-bold kings-gradient-text">$${product.price.toFixed(2)}</p>
+                    <p class="text-lg sm:text-xl md:text-2xl text-gray-400 line-through">$${product.fullPrice.toFixed(2)}</p>
                 `;
                 modalMainImage.src = product.mainImage;
                 addToCartBtn.dataset.productId = product.id;
@@ -956,7 +931,7 @@
                     thumb.addEventListener('click', () => { modalMainImage.src = thumb.src; });
                 });
                 modalReviewsContainer.innerHTML = product.reviews.length > 0 ? product.reviews.map(review => {
-                    let stars = Array.from({ length: 5 }, (_, i) => `<span class="text-xl text-${i < review.rating ? 'yellow-400' : 'gray-500'}">&#9733;</span>`).join('');
+                    let stars = Array.from({ length: 5 }, (_, i) => `<span class="text-xl text-${i < review.rating ? 'yellow-400' : 'gray-500'}">★</span>`).join('');
                     return `<div class="info-panel p-4 rounded-lg"><div class="flex items-center mb-2"><p class="font-bold text-white mr-2">${review.author}</p><div class="flex">${stars}</div></div><p class="text-gray-300">${review.text}</p></div>`;
                 }).join('') : `<p class="text-gray-400">No hay reseñas todavía.</p>`;
                 modal.classList.remove('hidden');
@@ -1061,11 +1036,22 @@
             quantityPlus.addEventListener('click', () => { quantityInput.value = parseInt(quantityInput.value) + 1; });
             quantityMinus.addEventListener('click', () => { if (parseInt(quantityInput.value) > 1) quantityInput.value = parseInt(quantityInput.value) - 1; });
 
-            searchBtn.addEventListener('click', () => {
-                searchInput.classList.toggle('w-0');
-                searchInput.classList.toggle('w-32');
-                searchInput.classList.toggle('sm:w-48');
-                if (searchInput.classList.contains('w-32')) searchInput.focus();
+            searchBtn.addEventListener('click', (e) => {
+                // If search is not active, activate it.
+                if(!searchInput.classList.contains('w-48')) {
+                    searchInput.classList.add('w-48', 'px-4', 'pl-10');
+                    searchInput.focus();
+                } else { // If it is active, and the input is empty, deactivate it.
+                    if(searchInput.value === '') {
+                         searchInput.classList.remove('w-48', 'px-4', 'pl-10');
+                    }
+                }
+            });
+
+            searchInput.addEventListener('blur', () => {
+                 if(searchInput.value === '') {
+                     searchInput.classList.remove('w-48', 'px-4', 'pl-10');
+                 }
             });
 
             searchInput.addEventListener('input', (e) => {
