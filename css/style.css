@@ -1,0 +1,273 @@
+/*
+================================================================
+--- CARGA DE FUENTES LOCALES ---
+================================================================
+*/
+@font-face {
+    font-family: 'Termina Test';
+    src: url('../assets/fuentes/SECUNDARIA/Termina Test/TerminaTest-Black.otf') format('opentype');
+    font-weight: 900;
+    /* Black */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Termina Test';
+    src: url('../assets/fuentes/SECUNDARIA/Termina Test/TerminaTest-Regular.otf') format('opentype');
+    font-weight: normal;
+    /* Regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Matrice';
+    src: url('../assets/fuentes/SECUNDARIA/Termina Test/Matrice-Black.otf') format('opentype');
+    font-weight: 900;
+    /* Black */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../assets/fuentes/TERCERA/Archivo_Condensed-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*
+================================================================
+--- ASIGNACIÓN DE FUENTES Y ESTILOS GENERALES ---
+================================================================
+*/
+body {
+    font-family: 'Archivo', sans-serif;
+    font-weight: bold;
+    background-color: #000000;
+    /* Fondo principal oscuro */
+    color: #fff;
+}
+
+/* Fuente para el titular más grande */
+h1 {
+    font-family: 'Termina Test', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 900;
+}
+
+/* Fuente Matrice para todos los demás títulos, subtítulos y elementos primarios (botones, nav) */
+h2,
+h3,
+summary,
+.font-primary {
+    font-family: 'Matrice', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 900;
+    /* Matrice-Black se carga con peso 900 */
+}
+
+/* Video de Fondo */
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    object-fit: cover;
+    background-color: #0a0a0a;
+}
+
+/* Encabezado que Encoge */
+#header nav {
+    transition: padding 0.3s ease-in-out;
+}
+
+#header.header-shrink nav {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#header .header-logo {
+    width: 6rem;
+    transition: width 0.3s ease-in-out;
+}
+
+#header.header-shrink .header-logo {
+    width: 5rem;
+}
+
+#header .nav-link {
+    color: #1a1a1a;
+    transition: color 0.3s ease-in-out;
+}
+
+#header .nav-link:hover {
+    color: #ffffff;
+    /* Tono más claro para el hover */
+}
+
+
+/* Paleta de Colores y Efectos */
+.kings-gradient-text {
+    background: linear-gradient(90deg, #FFD700, #F59E0B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.kings-gradient-bg {
+    background: linear-gradient(90deg, #F59E0B, #D97706);
+}
+
+#buy-main-product-btn:hover {
+    filter: brightness(1.1);
+}
+
+.pulse-btn {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Estilos de Componentes con Desenfoque */
+.feature-card,
+.review-card,
+.product-card,
+.president-card,
+.info-panel {
+    background-color: rgba(26, 26, 26, 0.8);
+    /* Ligeramente más transparente */
+    border: 1px solid rgba(75, 75, 75, 0.5);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-card:hover,
+.review-card:hover,
+.product-card:hover,
+.president-card:hover {
+    transform: translateY(-5px);
+    border-color: #f4af23;
+}
+
+#hero-carousel {
+    border-color: #f4af23;
+    box-shadow: 0 0 25px 5px rgba(244, 175, 35, 0.3);
+}
+
+/* Carrusel de Escudos */
+.team-ticker {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.team-ticker::before,
+.team-ticker::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 2;
+}
+
+.team-ticker::before {
+    left: 0;
+    background: linear-gradient(to right, #000000 20%, rgba(0, 0, 0, 0) 100%);
+}
+
+.team-ticker::after {
+    right: 0;
+    background: linear-gradient(to left, #000000 20%, rgba(0, 0, 0, 0) 100%);
+}
+
+.team-ticker-track {
+    display: flex;
+}
+
+.team-logo-item {
+    width: 150px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.team-logo-item img {
+    height: 60px;
+    width: auto;
+    filter: grayscale(100%) opacity(0.6);
+    transition: all 0.3s ease;
+}
+
+.team-logo-item img.is-active {
+    filter: grayscale(0%) opacity(1);
+    transform: scale(1.15);
+}
+
+
+/* Modal (Ventana Emergente) */
+#product-modal,
+#cart-modal {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+    background: #1f2937;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+    background: #F59E0B;
+    border-radius: 4px;
+}
+
+#search-input {
+    transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+/* Estilos para Menú Móvil */
+#mobile-menu {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilo para scrollbar horizontal personalizado en móvil */
+@media (max-width: 767px) {
+    .horizontal-scroll {
+        -ms-overflow-style: auto;
+        scrollbar-width: auto;
+    }
+
+    .horizontal-scroll::-webkit-scrollbar {
+        display: block;
+        height: 8px;
+    }
+
+    .horizontal-scroll::-webkit-scrollbar-track {
+        background: #1f2937;
+        border-radius: 4px;
+    }
+
+    .horizontal-scroll::-webkit-scrollbar-thumb {
+        background-color: #f4af23;
+        border-radius: 4px;
+    }
+}
