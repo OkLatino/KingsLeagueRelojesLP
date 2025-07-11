@@ -29,21 +29,7 @@ window.addEventListener('load', () => {
                 "Incluye: Smartwatch, cable de carga, manual y 2 juegos de extensibles."
             ]
         },
-        {
-            id: 2,
-            sku: 'STKL-01',
-            price: 999.00,
-            fullPrice: 2398.00,
-            mainImage: 'assets/relojes/stkl-01/stkl-01 (1).jpg',
-            gallery: [
-                'assets/relojes/stkl-01/stkl-01 (1).jpg',
-                'assets/relojes/stkl-01/stkl-01 (2).jpg',
-                'assets/relojes/stkl-01/stkl-01 (3).jpg',
-                'assets/relojes/stkl-01/stkl-01 (4).jpg',
-                'assets/relojes/stkl-01/stkl-01 (5).jpg',
-                'assets/relojes/stkl-01/stkl-01 (6).jpg'
-            ]
-        },
+        { id: 2, sku: 'STKL-01', price: 999.00, fullPrice: 2398.00, mainImage: 'assets/relojes/stkl-01/stkl-01 (1).jpg', gallery: ['assets/relojes/stkl-01/stkl-01 (1).jpg', 'assets/relojes/stkl-01/stkl-01 (2).jpg', 'assets/relojes/stkl-01/stkl-01 (3).jpg', 'assets/relojes/stkl-01/stkl-01 (4).jpg', 'assets/relojes/stkl-01/stkl-01 (5).jpg', 'assets/relojes/stkl-01/stkl-01 (6).jpg'] },
         { id: 3, sku: 'STKL-02', price: 999.00, fullPrice: 2398.00, mainImage: 'assets/relojes/stkl-02/stkl-02 (1).jpg', gallery: ['assets/relojes/stkl-02/stkl-02 (1).jpg', 'assets/relojes/stkl-02/stkl-02 (2).jpg', 'assets/relojes/stkl-02/stkl-02 (3).jpg', 'assets/relojes/stkl-02/stkl-02 (4).jpg', 'assets/relojes/stkl-02/stkl-02 (5).jpg', 'assets/relojes/stkl-02/stkl-02 (6).jpg'] },
         { id: 4, sku: 'STKL-03', price: 999.00, fullPrice: 2398.00, mainImage: 'assets/relojes/stkl-03/stkl-03 (1).jpg', gallery: ['assets/relojes/stkl-03/stkl-03 (1).jpg', 'assets/relojes/stkl-03/stkl-03 (2).jpg', 'assets/relojes/stkl-03/stkl-03 (3).jpg', 'assets/relojes/stkl-03/stkl-03 (4).jpg', 'assets/relojes/stkl-03/stkl-03 (5).jpg', 'assets/relojes/stkl-03/stkl-03 (6).jpg'] },
         { id: 5, sku: 'STKL-04', price: 999.00, fullPrice: 2398.00, mainImage: 'assets/relojes/stkl-04/stkl-04 (1).jpg', gallery: ['assets/relojes/stkl-04/stkl-04 (1).jpg', 'assets/relojes/stkl-04/stkl-04 (2).jpg', 'assets/relojes/stkl-04/stkl-04 (3).jpg', 'assets/relojes/stkl-04/stkl-04 (4).jpg', 'assets/relojes/stkl-04/stkl-04 (5).jpg', 'assets/relojes/stkl-04/stkl-04 (6).jpg'] },
@@ -107,6 +93,7 @@ window.addEventListener('load', () => {
     // --- DOM ELEMENTS ---
     let cart = [];
     const getEl = (id) => document.getElementById(id);
+    const preloader = getEl('preloader');
     const productGrid = getEl('product-grid');
     const presidentsGrid = getEl('presidents-grid');
     const reviewsGrid = getEl('reviews-grid-container');
@@ -331,9 +318,9 @@ window.addEventListener('load', () => {
 
         modalName.textContent = product.name;
         modalPrice.innerHTML = `
-            <p class="text-2xl sm:text-3xl md:text-4xl font-bold kings-gradient-text">$${product.price.toFixed(2)}</p>
-            <p class="text-lg sm:text-xl md:text-2xl text-gray-400 line-through">$${product.fullPrice.toFixed(2)}</p>
-        `;
+                <p class="text-2xl sm:text-3xl md:text-4xl font-bold kings-gradient-text">$${product.price.toFixed(2)}</p>
+                <p class="text-lg sm:text-xl md:text-2xl text-gray-400 line-through">$${product.fullPrice.toFixed(2)}</p>
+            `;
 
         showGalleryImage(currentGalleryIndex);
 
@@ -511,18 +498,18 @@ window.addEventListener('load', () => {
 
     // --- TEAM TICKER ANIMATION ---
     const tickerTrack = getEl('team-ticker-track');
-    const logoItems = tickerTrack.children;
     let position = 0;
     const speed = 0.5;
 
     function animateTeamTicker() {
         position -= speed;
-        if (position <= - (tickerTrack.scrollWidth / 2)) {
+        if (tickerTrack.scrollWidth > 0 && position <= - (tickerTrack.scrollWidth / 2)) {
             position = 0;
         }
         tickerTrack.style.transform = `translateX(${position}px)`;
 
         const screenCenter = window.innerWidth / 2;
+        const logoItems = tickerTrack.children;
         for (let item of logoItems) {
             const rect = item.getBoundingClientRect();
             const itemCenter = rect.left + rect.width / 2;
@@ -548,6 +535,13 @@ window.addEventListener('load', () => {
     renderTeamTicker();
     animateTeamTicker(); // Start team ticker animation
     renderReviews();
+
+    // --- HIDE PRELOADER ---
+    if (preloader) {
+        setTimeout(() => {
+            preloader.classList.add('preloader-hidden');
+        }, 500); // A small delay
+    }
 
     // --- SCROLL ANIMATIONS ---
     const sr = ScrollReveal({ distance: '50px', duration: 800, easing: 'cubic-bezier(0.5, 0, 0, 1)', reset: false });

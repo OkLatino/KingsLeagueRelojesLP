@@ -67,6 +67,34 @@ summary,
     /* Matrice-Black se carga con peso 900 */
 }
 
+/*
+================================================================
+--- PRELOADER STYLES ---
+================================================================
+*/
+#preloader {
+    transition: opacity 0.75s ease-in-out, visibility 0.75s ease-in-out;
+}
+
+#preloader.preloader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /* Video de Fondo */
 #background-video {
     position: fixed;
@@ -122,8 +150,15 @@ summary,
     background: linear-gradient(90deg, #F59E0B, #D97706);
 }
 
+/* --- ESTILOS DEL BOTÓN PRINCIPAL --- */
+#buy-main-product-btn {
+    transition: all 0.3s ease-in-out;
+}
+
 #buy-main-product-btn:hover {
-    filter: brightness(1.1);
+    filter: brightness(1.2);
+    transform: scale(1.05);
+    box-shadow: 0 0 25px 10px rgba(245, 158, 11, 0.4); /* Efecto de resplandor */
 }
 
 .pulse-btn {
