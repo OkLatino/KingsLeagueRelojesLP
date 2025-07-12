@@ -119,23 +119,55 @@ summary,
     padding-bottom: 0.5rem;
 }
 
+#header.header-shrink .top-bar {
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    opacity: 0;
+}
+
 #header .header-logo {
-    width: 6rem;
+    width: 10rem; /* Increased from 6rem */
     transition: width 0.3s ease-in-out;
 }
 
 #header.header-shrink .header-logo {
-    width: 5rem;
+    width: 8rem; /* Increased from 5rem */
 }
 
+/* --- NEW HEADER STYLES --- */
 #header .nav-link {
-    color: #1a1a1a;
+    color: #ffffff;
+    /* White text for links */
     transition: color 0.3s ease-in-out;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+#header .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f4af23;
+    transition: width 0.3s ease-in-out;
+}
+
+#header .nav-link:hover::after {
+    width: 100%;
 }
 
 #header .nav-link:hover {
-    color: #ffffff;
-    /* Tono más claro para el hover */
+    color: #f4af23;
+    /* Gold tone for hover */
+}
+
+.top-bar {
+    transition: all 0.3s ease-in-out;
+    max-height: 50px; /* Adjust as needed */
 }
 
 
@@ -158,7 +190,8 @@ summary,
 #buy-main-product-btn:hover {
     filter: brightness(1.2);
     transform: scale(1.05);
-    box-shadow: 0 0 25px 10px rgba(245, 158, 11, 0.4); /* Efecto de resplandor */
+    box-shadow: 0 0 25px 10px rgba(245, 158, 11, 0.4);
+    /* Efecto de resplandor */
 }
 
 .pulse-btn {
@@ -204,10 +237,24 @@ summary,
 }
 
 /* Carrusel de Escudos */
+@keyframes scroll-left {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+@keyframes scroll-right {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
 .team-ticker {
     overflow: hidden;
     position: relative;
     width: 100%;
+}
+
+.team-ticker:hover .team-ticker-track {
+    animation-play-state: paused;
 }
 
 .team-ticker::before,
@@ -232,6 +279,14 @@ summary,
 
 .team-ticker-track {
     display: flex;
+    width: fit-content;
+}
+
+#team-ticker-track {
+    /* Animation is now handled by JS for seamless looping */
+}
+#team-ticker-track-2 {
+    /* Animation is now handled by JS for seamless looping */
 }
 
 .team-logo-item {
@@ -258,7 +313,8 @@ summary,
 
 /* Modal (Ventana Emergente) */
 #product-modal,
-#cart-modal {
+#cart-modal,
+#wishlist-modal {
     transition: opacity 0.3s ease-in-out;
 }
 
@@ -273,15 +329,6 @@ summary,
 .modal-body::-webkit-scrollbar-thumb {
     background: #F59E0B;
     border-radius: 4px;
-}
-
-#search-input {
-    transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
-}
-
-/* Estilos para Menú Móvil */
-#mobile-menu {
-    transition: transform 0.3s ease-in-out;
 }
 
 /* Estilo para scrollbar horizontal personalizado en móvil */
@@ -305,4 +352,12 @@ summary,
         background-color: #f4af23;
         border-radius: 4px;
     }
+}
+
+.wishlist-btn-card .heart-icon {
+    transition: all 0.2s ease-in-out;
+}
+.wishlist-btn-card .heart-icon.filled {
+    fill: #ef4444; /* red-500 */
+    stroke: #ef4444;
 }
