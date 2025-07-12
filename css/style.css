@@ -231,6 +231,27 @@ summary,
     border-color: #f4af23;
 }
 
+/* --- NEW COMPACT FEATURE CARD STYLES --- */
+.compact-feature-card {
+    background-color: rgba(40, 40, 40, 0.8);
+    border: 1px solid rgba(75, 75, 75, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 0.75rem; /* rounded-xl */
+    padding: 0.75rem; /* p-3 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem; /* gap-2 */
+}
+.compact-feature-card .icon {
+    width: 1.75rem; /* w-7 */
+    height: 1.75rem; /* h-7 */
+    color: #f4af23; /* text-orange-400 */
+}
+
+
 #hero-carousel {
     border-color: #f4af23;
     box-shadow: 0 0 25px 5px rgba(244, 175, 35, 0.3);

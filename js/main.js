@@ -44,7 +44,7 @@ window.addEventListener('load', () => {
             description: "Diseño negro con detalles amarillos, Minimalismo con poder y presencia. Luce el estilo único de la Kings League con este reloj de colección. Cuenta con extensible de silicona, de movimiento de cuarzo, y resistencia al agua de 3 ATM. Su caja de aleación con recubrimiento IPB pulido y cristal mineral lo hacen resistente y con gran presencia. Lidera con estilo. Domina tu tiempo.",
             mainImage: 'assets/relojes/stkl-01/stkl-01 (1).jpg',
             gallery: ['assets/relojes/stkl-01/stkl-01 (1).jpg', 'assets/relojes/stkl-01/stkl-01 (2).jpg', 'assets/relojes/stkl-01/stkl-01 (3).jpg', 'assets/relojes/stkl-01/stkl-01 (4).jpg', 'assets/relojes/stkl-01/stkl-01 (5).jpg', 'assets/relojes/stkl-01/stkl-01 (6).jpg'],
-            specifications: ["Extensible de silicona, Cuarzo, 3 ATM, Caja de Aleación con recubrimiento IPB y pulido, Cristal de mineral"]
+            specifications: ["Extensible de silicona", "Cuarzo", "3 ATM", "Caja de Aleación con recubrimiento IPB y pulido", "Cristal de mineral"]
         },
         {
             id: 3,
@@ -57,7 +57,7 @@ window.addEventListener('load', () => {
             description: "Degradado naranja con líneas dinámicas. Energía visual en movimiento. Luce el estilo único de la Kings League con este reloj de colección. Cuenta con extensible de silicona, de movimiento de cuarzo, y resistencia al agua de 3 ATM. Su caja de aleación con recubrimiento IPB pulido y cristal mineral lo hacen resistente y con gran presencia.",
             mainImage: 'assets/relojes/stkl-02/stkl-02 (1).jpg',
             gallery: ['assets/relojes/stkl-02/stkl-02 (1).jpg', 'assets/relojes/stkl-02/stkl-02 (2).jpg', 'assets/relojes/stkl-02/stkl-02 (3).jpg', 'assets/relojes/stkl-02/stkl-02 (4).jpg', 'assets/relojes/stkl-02/stkl-02 (5).jpg', 'assets/relojes/stkl-02/stkl-02 (6).jpg'],
-            specifications: ["Extensible de silicona, Cuarzo, 3 ATM, Caja de Aleación con recubrimiento IPB y pulido, Cristal de mineral"]
+            specifications: ["Extensible de silicona", "Cuarzo", "3 ATM", "Caja de Aleación con recubrimiento IPB y pulido", "Cristal de mineral"]
         },
         {
             id: 4,
@@ -70,7 +70,7 @@ window.addEventListener('load', () => {
             description: "Correa bicolor con el logo frontal dominante. Estética directa y atrevida. Luce el estilo único de la Kings League con este reloj de colección. Cuenta con extensible de silicona, de movimiento de cuarzo, y resistencia al agua de 3 ATM. Su caja de aleación con recubrimiento IPB pulido y cristal mineral lo hacen resistente y con gran presencia.",
             mainImage: 'assets/relojes/stkl-03/stkl-03 (1).jpg',
             gallery: ['assets/relojes/stkl-03/stkl-03 (1).jpg', 'assets/relojes/stkl-03/stkl-03 (2).jpg', 'assets/relojes/stkl-03/stkl-03 (3).jpg', 'assets/relojes/stkl-03/stkl-03 (4).jpg', 'assets/relojes/stkl-03/stkl-03 (5).jpg', 'assets/relojes/stkl-03/stkl-03 (6).jpg'],
-            specifications: ["Extensible de silicona, Cuarzo, 3 ATM, Caja de Aleación con recubrimiento IPB y pulido, Cristal de mineral"]
+            specifications: ["Extensible de silicona", "Cuarzo", "3 ATM", "Caja de Aleación con recubrimiento IPB y pulido", "Cristal de mineral"]
         },
         {
             id: 5,
@@ -83,7 +83,7 @@ window.addEventListener('load', () => {
             description: "Carátula limpia con el logo triple y estética institucional. Identidad pura. Luce el estilo único de la Kings League con este reloj de colección. Cuenta con extensible de silicona, de movimiento de cuarzo, y resistencia al agua de 3 ATM. Su caja de aleación con recubrimiento IPB pulido y cristal mineral lo hacen resistente y con gran presencia.",
             mainImage: 'assets/relojes/stkl-04/stkl-04 (1).jpg',
             gallery: ['assets/relojes/stkl-04/stkl-04 (1).jpg', 'assets/relojes/stkl-04/stkl-04 (2).jpg', 'assets/relojes/stkl-04/stkl-04 (3).jpg', 'assets/relojes/stkl-04/stkl-04 (4).jpg', 'assets/relojes/stkl-04/stkl-04 (5).jpg', 'assets/relojes/stkl-04/stkl-04 (6).jpg'],
-            specifications: ["Extensible de silicona, Cuarzo, 3 ATM, Caja de Aleación con recubrimiento IPB y pulido, Cristal de mineral"]
+            specifications: ["Extensible de silicona", "Cuarzo", "3 ATM", "Caja de Aleación con recubrimiento IPB y pulido", "Cristal de mineral"]
         },
         {
             id: 6,
@@ -96,7 +96,7 @@ window.addEventListener('load', () => {
             description: "Flechas ascendentes en la correa y rostro del rey al centro. Liderazgo visual. Luce el estilo único de la Kings League con este reloj de colección. Cuenta con extensible de silicona, de movimiento de cuarzo, y resistencia al agua de 3 ATM. Su caja de aleación con recubrimiento IPB pulido y cristal mineral lo hacen resistente y con gran presencia.",
             mainImage: 'assets/relojes/stkl-05/stkl-05 (1).jpg',
             gallery: ['assets/relojes/stkl-05/stkl-05 (1).jpg', 'assets/relojes/stkl-05/stkl-05 (2).jpg', 'assets/relojes/stkl-05/stkl-05 (3).jpg', 'assets/relojes/stkl-05/stkl-05 (4).jpg', 'assets/relojes/stkl-05/stkl-05 (5).jpg', 'assets/relojes/stkl-05/stkl-05 (6).jpg'],
-            specifications: ["Extensible de silicona, Cuarzo, 3 ATM, Caja de Aleación con recubrimiento IPB y pulido, Cristal de mineral"]
+            specifications: ["Extensible de silicona", "Cuarzo", "3 ATM", "Caja de Aleación con recubrimiento IPB y pulido", "Cristal de mineral"]
         },
         {
             id: 7,
@@ -109,7 +109,7 @@ window.addEventListener('load', () => {
             description: "Correa bicolor con el logo frontal dominante. Estética directa y atrevida. Luce el estilo único de la Kings League con este reloj de colección. Cuenta con extensible de silicona, de movimiento de cuarzo, y resistencia al agua de 3 ATM. Su caja de aleación con recubrimiento IPB pulido y cristal mineral lo hacen resistente y con gran presencia.",
             mainImage: 'assets/relojes/stkl-06/stkl-06 (1).jpg',
             gallery: ['assets/relojes/stkl-06/stkl-06 (1).jpg', 'assets/relojes/stkl-06/stkl-06 (2).jpg', 'assets/relojes/stkl-06/stkl-06 (3).jpg', 'assets/relojes/stkl-06/stkl-06 (4).jpg', 'assets/relojes/stkl-06/stkl-06 (5).jpg', 'assets/relojes/stkl-06/stkl-06 (6).jpg'],
-            specifications: ["Extensible de silicona, Cuarzo, 3 ATM, Caja de Aleación con recubrimiento IPB y pulido, Cristal de mineral"]
+            specifications: ["Extensible de silicona", "Cuarzo", "3 ATM", "Caja de Aleación con recubrimiento IPB y pulido", "Cristal de mineral"]
         },
         {
             id: 8,
@@ -122,7 +122,7 @@ window.addEventListener('load', () => {
             description: "Carátula blanca y correa amarilla. Claridad táctica con diseño llamativo. Diseñado para los verdaderos fans, este reloj Kings League combina estética moderna y precisión. Incorpora extensible de silicona, movimiento de cuarzo, cronógrafo funcional y calendario, además de resistencia al agua de 3 ATM. Su caja de aleación con recubrimiento IPB pulido y cristal mineral lo hacen resistente y llamativo.",
             mainImage: 'assets/relojes/stkl-07/stkl-07 (1).jpg',
             gallery: ['assets/relojes/stkl-07/stkl-07 (1).jpg', 'assets/relojes/stkl-07/stkl-07 (2).jpg', 'assets/relojes/stkl-07/stkl-07 (3).jpg', 'assets/relojes/stkl-07/stkl-07 (4).jpg', 'assets/relojes/stkl-07/stkl-07 (5).jpg', 'assets/relojes/stkl-07/stkl-07 (6).jpg'],
-            specifications: ["Extensible de silicona, Cuarzo, 3 ATM, Caja de Aleación con recubrimiento IPB y pulido, Cristal de mineral"]
+            specifications: ["Extensible de silicona", "Cuarzo", "Cronógrafo funcional", "Calendario", "3 ATM", "Caja de Aleación con recubrimiento IPB y pulido", "Cristal de mineral"]
         },
         {
             id: 9,
@@ -135,7 +135,7 @@ window.addEventListener('load', () => {
             description: "Cronografo negro con detalles dorados. Precisión, fuerza y estilo competitivo. Diseñado para los verdaderos fans, este reloj Kings League combina estética moderna y precisión. Incorpora extensible de silicona, movimiento de cuarzo, cronógrafo funcional y calendario, además de resistencia al agua de 3 ATM. Su caja de aleación con recubrimiento IPB pulido y cristal mineral lo hacen resistente y llamativo.",
             mainImage: 'assets/relojes/stkl-08/stkl-08 (1).jpg',
             gallery: ['assets/relojes/stkl-08/stkl-08 (1).jpg', 'assets/relojes/stkl-08/stkl-08 (2).jpg', 'assets/relojes/stkl-08/stkl-08 (3).jpg', 'assets/relojes/stkl-08/stkl-08 (4).jpg', 'assets/relojes/stkl-08/stkl-08 (5).jpg', 'assets/relojes/stkl-08/stkl-08 (6).jpg'],
-            specifications: ["Extensible de silicona, Cuarzo, 3 ATM, Caja de Aleación con recubrimiento IPB y pulido, Cristal de mineral"]
+            specifications: ["Extensible de silicona", "Cuarzo", "Cronógrafo funcional", "Calendario", "3 ATM", "Caja de Aleación con recubrimiento IPB y pulido", "Cristal de mineral"]
         },
         {
             id: 10,
@@ -148,7 +148,7 @@ window.addEventListener('load', () => {
             description: "Caja tonneau, marcadores tipo joya y rostro real en gran escala. Estatus puro. Reloj exclusivo de la Kings League con extensible de silicona, movimiento de cuarzo y resistencia al agua de 3 ATM. Destaca por su caja cuadrada de aleación con recubrimiento IPB pulido y cristal mineral. Un accesorio con estilo único y actitud deportiva.",
             mainImage: 'assets/relojes/stkl-09/stkl-09 (1).jpg',
             gallery: ['assets/relojes/stkl-09/stkl-09 (1).jpg', 'assets/relojes/stkl-09/stkl-09 (2).jpg', 'assets/relojes/stkl-09/stkl-09 (3).jpg', 'assets/relojes/stkl-09/stkl-09 (4).jpg', 'assets/relojes/stkl-09/stkl-09 (5).jpg', 'assets/relojes/stkl-09/stkl-09 (6).jpg'],
-            specifications: ["Extensible de silicona, Cuarzo, 3 ATM, Caja de Aleación con recubrimiento IPB y pulido, Cristal de mineral"]
+            specifications: ["Extensible de silicona", "Cuarzo", "3 ATM", "Caja de Aleación con recubrimiento IPB y pulido", "Cristal de mineral"]
         }
     ];
 
@@ -274,6 +274,8 @@ window.addEventListener('load', () => {
     const modalSpecifications = getEl('modal-specifications');
     const modalThumbnailGallery = getEl('modal-thumbnail-gallery');
     const modalReviewsContainer = getEl('modal-reviews-container');
+    const modalSmartwatchFeatures = getEl('modal-smartwatch-features'); 
+    const modalOtherWatchFeatures = getEl('modal-other-watch-features'); // New element
     const quantityInput = getEl('quantity-input');
     const quantityPlus = getEl('quantity-plus');
     const quantityMinus = getEl('quantity-minus');
@@ -527,6 +529,18 @@ window.addEventListener('load', () => {
         modalMainImage.src = currentProductGallery[index];
         currentGalleryIndex = index;
     };
+    
+    function getIconForSpec(spec) {
+        const s = spec.toLowerCase();
+        if (s.includes('cuarzo')) return `<svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.562.562 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.562.562 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" /></svg>`;
+        if (s.includes('atm')) return `<svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013-3.812A8.223 8.223 0 0115.362 5.214z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 18a8.966 8.966 0 01-5.272-1.761l-.001-.001-.002-.001a.5.5 0 01.606-.784l.008.006a7.034 7.034 0 004.658 0l.008-.006a.5.5 0 01.606.784l-.002.001-.001.001A8.966 8.966 0 0112 18z" /></svg>`;
+        if (s.includes('cronógrafo')) return `<svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>`;
+        if (s.includes('calendario')) return `<svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0h18M12 12.75h.008v.008H12v-.008z" /></svg>`;
+        if (s.includes('cristal')) return `<svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" /></svg>`;
+        if (s.includes('silicona')) return `<svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 8.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v8.25A2.25 2.25 0 006 16.5h2.25m8.25-8.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-7.5A2.25 2.25 0 018.25 18v-1.5m8.25-8.25h-6a2.25 2.25 0 00-2.25 2.25v6" /></svg>`;
+        return `<svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.438.995a6.427 6.427 0 010 .255c0 .382.145.755.438.995l1.003.827c.424.35.534.954.26 1.431l-1.296 2.247a1.125 1.125 0 01-1.37.49l-1.217-.456c-.355-.133-.75-.072-1.075.124a6.57 6.57 0 01-.22.127c-.332.183-.582.495-.645.87l-.213 1.281c-.09.543-.56.94-1.11.94h-2.593c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.063-.374-.313-.686-.645-.87a6.52 6.52 0 01-.22-.127c-.324-.196-.72-.257-1.075-.124l-1.217.456a1.125 1.125 0 01-1.37-.49l-1.296-2.247a1.125 1.125 0 01.26-1.431l1.003-.827c.293-.24.438.613-.438-.995a6.427 6.427 0 010-.255c0-.382-.145-.755-.438-.995l-1.003-.827a1.125 1.125 0 01-.26-1.431l1.296-2.247a1.125 1.125 0 011.37-.49l1.217.456c.355.133.75.072 1.075-.124a6.57 6.57 0 01.22-.127c.332-.183-.582-.495-.645-.87l.213-1.281z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>`;
+    }
+
 
     const openModal = (productId) => {
         const product = products.find(p => p.id == productId);
@@ -539,14 +553,82 @@ window.addEventListener('load', () => {
         modalModelSku.textContent = `Modelo: ${product.model} | SKU: ${product.sku}`;
         modalDescription.textContent = product.description;
         modalPrice.innerHTML = `
-                <p class="text-2xl sm:text-3xl md:text-4xl font-bold kings-gradient-text">$${product.price.toFixed(2)}</p>
-                <p class="text-lg sm:text-xl md:text-2xl text-gray-400 line-through">$${product.fullPrice.toFixed(2)}</p>
-                `;
+            <p class="text-2xl sm:text-3xl md:text-4xl font-bold kings-gradient-text">$${product.price.toFixed(2)}</p>
+            <p class="text-lg sm:text-xl md:text-2xl text-gray-400 line-through">$${product.fullPrice.toFixed(2)}</p>
+            `;
 
         showGalleryImage(currentGalleryIndex);
 
         addToCartBtn.dataset.productId = product.id;
         quantityInput.value = 1;
+        
+        // Clear both feature containers initially
+        modalSmartwatchFeatures.innerHTML = '';
+        modalSmartwatchFeatures.classList.add('hidden');
+        modalOtherWatchFeatures.innerHTML = '';
+        modalOtherWatchFeatures.classList.add('hidden');
+
+
+        // Show smartwatch-specific features only for product ID 1
+        if (product.id === 1) {
+            modalSmartwatchFeatures.innerHTML = `
+                <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 border-b-2 border-orange-500/50 pb-2">
+                    Funcionalidad sin Límites
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                    <div class="feature-card p-4 rounded-2xl">
+                        <div class="kings-gradient-text mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-1 text-white">CAJA RESISTENTE</h3>
+                        <p class="text-gray-400 text-sm">Fabricado con aleación de Zinc+ABS y protección IP68.</p>
+                    </div>
+                    <div class="feature-card p-4 rounded-2xl">
+                        <div class="kings-gradient-text mb-2">
+                            <svg class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-1 text-white">BATERÍA DE 600mAh</h3>
+                        <p class="text-gray-400 text-sm">Batería de larga duración y conexión Bluetooth 5.2.</p>
+                    </div>
+                    <div class="feature-card p-4 rounded-2xl">
+                        <div class="kings-gradient-text mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-1 text-white">MONITOREO DE SALUD</h3>
+                        <p class="text-gray-400 text-sm">Mide tu oxígeno en sangre, ritmo cardiaco y sueño.</p>
+                    </div>
+                </div>
+            `;
+            modalSmartwatchFeatures.classList.remove('hidden');
+        } else {
+             // Build and show compact feature panels for other watches
+            const featuresHTML = product.specifications.map(spec => {
+                let iconSVG = getIconForSpec(spec);
+                return `
+                    <div class="compact-feature-card">
+                        ${iconSVG}
+                        <h4 class="text-sm font-bold text-white uppercase">${spec}</h4>
+                    </div>
+                `;
+            }).join('');
+
+            modalOtherWatchFeatures.innerHTML = `
+                <h3 class="text-2xl sm:text-3xl font-bold text-white mb-4 border-b-2 border-orange-500/50 pb-2">
+                    Componentes
+                </h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+                    ${featuresHTML}
+                </div>
+            `;
+            modalOtherWatchFeatures.classList.remove('hidden');
+        }
+
 
         modalSpecifications.innerHTML = product.specifications.map(spec => `<li>${spec}</li>`).join('');
 
