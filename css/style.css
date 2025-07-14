@@ -127,14 +127,12 @@ summary,
 }
 
 #header .header-logo {
-    width: 10rem;
-    /* Increased from 6rem */
+    width: 10rem; /* Increased from 6rem */
     transition: width 0.3s ease-in-out;
 }
 
 #header.header-shrink .header-logo {
-    width: 8rem;
-    /* Increased from 5rem */
+    width: 8rem; /* Increased from 5rem */
 }
 
 /* --- NEW HEADER STYLES --- */
@@ -169,8 +167,7 @@ summary,
 
 .top-bar {
     transition: all 0.3s ease-in-out;
-    max-height: 50px;
-    /* Adjust as needed */
+    max-height: 50px; /* Adjust as needed */
 }
 
 
@@ -239,26 +236,19 @@ summary,
     background-color: rgba(40, 40, 40, 0.8);
     border: 1px solid rgba(75, 75, 75, 0.5);
     backdrop-filter: blur(10px);
-    border-radius: 0.75rem;
-    /* rounded-xl */
-    padding: 0.75rem;
-    /* p-3 */
+    border-radius: 0.75rem; /* rounded-xl */
+    padding: 0.75rem; /* p-3 */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 0.5rem;
-    /* gap-2 */
+    gap: 0.5rem; /* gap-2 */
 }
-
 .compact-feature-card .icon {
-    width: 1.75rem;
-    /* w-7 */
-    height: 1.75rem;
-    /* h-7 */
-    color: #f4af23;
-    /* text-orange-400 */
+    width: 1.75rem; /* w-7 */
+    height: 1.75rem; /* h-7 */
+    color: #f4af23; /* text-orange-400 */
 }
 
 
@@ -269,23 +259,13 @@ summary,
 
 /* Carrusel de Escudos */
 @keyframes scroll-left {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
 }
 
 @keyframes scroll-right {
-    from {
-        transform: translateX(-100%);
-    }
-
-    to {
-        transform: translateX(0);
-    }
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
 }
 
 .team-ticker {
@@ -326,7 +306,6 @@ summary,
 #team-ticker-track {
     /* Animation is now handled by JS for seamless looping */
 }
-
 #team-ticker-track-2 {
     /* Animation is now handled by JS for seamless looping */
 }
@@ -399,9 +378,7 @@ summary,
 .wishlist-btn-card .heart-icon {
     transition: all 0.2s ease-in-out;
 }
-
 .wishlist-btn-card .heart-icon.filled {
-    fill: #ef4444;
-    /* red-500 */
+    fill: #ef4444; /* red-500 */
     stroke: #ef4444;
 }
