@@ -11,13 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 1299.00,
             fullPrice: 3998.00,
             description: "Smartwatch moderno con estilo deportivo y funcionalidad digital. Equipado con una pantalla LED de fácil lectura, caja de aleación con recubrimiento IPB y acabado pulido que brinda un look sofisticado. Su correa de silicona ofrece comodidad durante todo el día. Resistencia al agua de 3 ATM, ideal para el uso diario.",
-            mainImage: 'assets/relojes/klsw-01/klsw-01 (1).jpg',
+            mainImage: 'assets/relojes/klsw-01/klsw-01(1).webp',
             gallery: [
-                'assets/relojes/klsw-01/klsw-01 (1).jpg',
-                'assets/relojes/klsw-01/klsw-01 (2).jpg',
-                'assets/relojes/klsw-01/klsw-01 (3).jpg',
-                'assets/relojes/klsw-01/klsw-01 (4).jpg',
-                'assets/relojes/klsw-01/klsw-01 (5).jpg'
+                'assets/relojes/klsw-01/klsw-01(1).webp',
+                'assets/relojes/klsw-01/klsw-01(2).webp',
+                'assets/relojes/klsw-01/klsw-01(3).webp',
+                'assets/relojes/klsw-01/klsw-01(4).webp',
+                'assets/relojes/klsw-01/klsw-01(5).webp'
             ],
             specifications: [
                 "Extensible de silicona, digital, 3 ATM, Caja de Aleación con recubrimiento IPB y pulido, pantalla Led",
@@ -42,8 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 999.00,
             fullPrice: 2398.00,
             description: "Diseño negro con detalles amarillos, Minimalismo con poder y presencia. Luce el estilo único de la Kings League con este reloj de colección. Cuenta con extensible de silicona, de movimiento de cuarzo, y resistencia al agua de 3 ATM. Su caja de aleación con recubrimiento IPB pulido y cristal mineral lo hacen resistente y con gran presencia. Lidera con estilo. Domina tu tiempo.",
-            mainImage: 'assets/relojes/stkl-01/stkl-01 (1).jpg',
-            gallery: ['assets/relojes/stkl-01/stkl-01 (1).jpg', 'assets/relojes/stkl-01/stkl-01 (2).jpg', 'assets/relojes/stkl-01/stkl-01 (3).jpg', 'assets/relojes/stkl-01/stkl-01 (4).jpg', 'assets/relojes/stkl-01/stkl-01 (5).jpg', 'assets/relojes/stkl-01/stkl-01 (6).jpg'],
+            mainImage: 'assets/relojes/stkl-01/stkl-01(1).webp',
+            gallery: ['assets/relojes/stkl-01/stkl-01(1).webp', 'assets/relojes/stkl-01/stkl-01(2).webp', 'assets/relojes/stkl-01/stkl-01(3).webp', 'assets/relojes/stkl-01/stkl-01(4).webp', 'assets/relojes/stkl-01/stkl-01(5).webp', 'assets/relojes/stkl-01/stkl-01(6).webp'],
             specifications: ["Extensible de silicona", "Cuarzo", "3 ATM", "Caja de Aleación con recubrimiento IPB y pulido", "Cristal de mineral"]
         },
         {
@@ -55,8 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 999.00,
             fullPrice: 2398.00,
             description: "Degradado naranja con líneas dinámicas. Energía visual en movimiento. Luce el estilo único de la Kings League con este reloj de colección. Cuenta con extensible de silicona, de movimiento de cuarzo, y resistencia al agua de 3 ATM. Su caja de aleación con recubrimiento IPB pulido y cristal mineral lo hacen resistente y con gran presencia.",
-            mainImage: 'assets/relojes/stkl-02/stkl-02 (1).jpg',
-            gallery: ['assets/relojes/stkl-02/stkl-02 (1).jpg', 'assets/relojes/stkl-02/stkl-02 (2).jpg', 'assets/relojes/stkl-02/stkl-02 (3).jpg', 'assets/relojes/stkl-02/stkl-02 (4).jpg', 'assets/relojes/stkl-02/stkl-02 (5).jpg', 'assets/relojes/stkl-02/stkl-02 (6).jpg'],
+            mainImage: 'assets/relojes/stkl-02/stkl-02(1).webp',
+            gallery: ['assets/relojes/stkl-02/stkl-02(1).webp', 'assets/relojes/stkl-02/stkl-02(2).webp', 'assets/relojes/stkl-02/stkl-02(3).webp', 'assets/relojes/stkl-02/stkl-02(4).webp', 'assets/relojes/stkl-02/stkl-02(5).webp', 'assets/relojes/stkl-02/stkl-02(6).webp'],
             specifications: ["Extensible de silicona", "Cuarzo", "3 ATM", "Caja de Aleación con recubrimiento IPB y pulido", "Cristal de mineral"]
         },
         {
@@ -68,8 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 999.00,
             fullPrice: 2398.00,
             description: "Correa bicolor con el logo frontal dominante. Estética directa y atrevida. Luce el estilo único de la Kings League con este reloj de colección. Cuenta con extensible de silicona, de movimiento de cuarzo, y resistencia al agua de 3 ATM. Su caja de aleación con recubrimiento IPB pulido y cristal mineral lo hacen resistente y con gran presencia.",
-            mainImage: 'assets/relojes/stkl-03/stkl-03 (1).jpg',
-            gallery: ['assets/relojes/stkl-03/stkl-03 (1).jpg', 'assets/relojes/stkl-03/stkl-03 (2).jpg', 'assets/relojes/stkl-03/stkl-03 (3).jpg', 'assets/relojes/stkl-03/stkl-03 (4).jpg', 'assets/relojes/stkl-03/stkl-03 (5).jpg', 'assets/relojes/stkl-03/stkl-03 (6).jpg'],
+            mainImage: 'assets/relojes/stkl-03/stkl-03(1).webp',
+            gallery: ['assets/relojes/stkl-03/stkl-03(1).webp', 'assets/relojes/stkl-03/stkl-03(2).webp', 'assets/relojes/stkl-03/stkl-03(3).webp', 'assets/relojes/stkl-03/stkl-03(4).webp', 'assets/relojes/stkl-03/stkl-03(5).webp', 'assets/relojes/stkl-03/stkl-03(6).webp'],
             specifications: ["Extensible de silicona", "Cuarzo", "3 ATM", "Caja de Aleación con recubrimiento IPB y pulido", "Cristal de mineral"]
         },
         {
@@ -81,8 +81,8 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 999.00,
             fullPrice: 2398.00,
             description: "Carátula limpia con el logo triple y estética institucional. Identidad pura. Luce el estilo único de la Kings League con este reloj de colección. Cuenta con extensible de silicona, de movimiento de cuarzo, y resistencia al agua de 3 ATM. Su caja de aleación con recubrimiento IPB pulido y cristal mineral lo hacen resistente y con gran presencia.",
-            mainImage: 'assets/relojes/stkl-04/stkl-04 (1).jpg',
-            gallery: ['assets/relojes/stkl-04/stkl-04 (1).jpg', 'assets/relojes/stkl-04/stkl-04 (2).jpg', 'assets/relojes/stkl-04/stkl-04 (3).jpg', 'assets/relojes/stkl-04/stkl-04 (4).jpg', 'assets/relojes/stkl-04/stkl-04 (5).jpg', 'assets/relojes/stkl-04/stkl-04 (6).jpg'],
+            mainImage: 'assets/relojes/stkl-04/stkl-04(1).webp',
+            gallery: ['assets/relojes/stkl-04/stkl-04(1).webp', 'assets/relojes/stkl-04/stkl-04(2).webp', 'assets/relojes/stkl-04/stkl-04(3).webp', 'assets/relojes/stkl-04/stkl-04(4).webp', 'assets/relojes/stkl-04/stkl-04(5).webp', 'assets/relojes/stkl-04/stkl-04(6).webp'],
             specifications: ["Extensible de silicona", "Cuarzo", "3 ATM", "Caja de Aleación con recubrimiento IPB y pulido", "Cristal de mineral"]
         },
         {
@@ -94,8 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 999.00,
             fullPrice: 2398.00,
             description: "Flechas ascendentes en la correa y rostro del rey al centro. Liderazgo visual. Luce el estilo único de la Kings League con este reloj de colección. Cuenta con extensible de silicona, de movimiento de cuarzo, y resistencia al agua de 3 ATM. Su caja de aleación con recubrimiento IPB pulido y cristal mineral lo hacen resistente y con gran presencia.",
-            mainImage: 'assets/relojes/stkl-05/stkl-05 (1).jpg',
-            gallery: ['assets/relojes/stkl-05/stkl-05 (1).jpg', 'assets/relojes/stkl-05/stkl-05 (2).jpg', 'assets/relojes/stkl-05/stkl-05 (3).jpg', 'assets/relojes/stkl-05/stkl-05 (4).jpg', 'assets/relojes/stkl-05/stkl-05 (5).jpg', 'assets/relojes/stkl-05/stkl-05 (6).jpg'],
+            mainImage: 'assets/relojes/stkl-05/stkl-05(1).webp',
+            gallery: ['assets/relojes/stkl-05/stkl-05(1).webp', 'assets/relojes/stkl-05/stkl-05(2).webp', 'assets/relojes/stkl-05/stkl-05(3).webp', 'assets/relojes/stkl-05/stkl-05(4).webp', 'assets/relojes/stkl-05/stkl-05(5).webp', 'assets/relojes/stkl-05/stkl-05(6).webp'],
             specifications: ["Extensible de silicona", "Cuarzo", "3 ATM", "Caja de Aleación con recubrimiento IPB y pulido", "Cristal de mineral"]
         },
         {
@@ -107,8 +107,8 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 999.00,
             fullPrice: 2398.00,
             description: "Correa bicolor con el logo frontal dominante. Estética directa y atrevida. Luce el estilo único de la Kings League con este reloj de colección. Cuenta con extensible de silicona, de movimiento de cuarzo, y resistencia al agua de 3 ATM. Su caja de aleación con recubrimiento IPB pulido y cristal mineral lo hacen resistente y con gran presencia.",
-            mainImage: 'assets/relojes/stkl-06/stkl-06 (1).jpg',
-            gallery: ['assets/relojes/stkl-06/stkl-06 (1).jpg', 'assets/relojes/stkl-06/stkl-06 (2).jpg', 'assets/relojes/stkl-06/stkl-06 (3).jpg', 'assets/relojes/stkl-06/stkl-06 (4).jpg', 'assets/relojes/stkl-06/stkl-06 (5).jpg', 'assets/relojes/stkl-06/stkl-06 (6).jpg'],
+            mainImage: 'assets/relojes/stkl-06/stkl-06(1).webp',
+            gallery: ['assets/relojes/stkl-06/stkl-06(1).webp', 'assets/relojes/stkl-06/stkl-06(2).webp', 'assets/relojes/stkl-06/stkl-06(3).webp', 'assets/relojes/stkl-06/stkl-06(4).webp', 'assets/relojes/stkl-06/stkl-06(5).webp', 'assets/relojes/stkl-06/stkl-06(6).webp'],
             specifications: ["Extensible de silicona", "Cuarzo", "3 ATM", "Caja de Aleación con recubrimiento IPB y pulido", "Cristal de mineral"]
         },
         {
@@ -120,8 +120,8 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 1299.00,
             fullPrice: 2998.00,
             description: "Carátula blanca y correa amarilla. Claridad táctica con diseño llamativo. Diseñado para los verdaderos fans, este reloj Kings League combina estética moderna y precisión. Incorpora extensible de silicona, movimiento de cuarzo, cronógrafo funcional y calendario, además de resistencia al agua de 3 ATM. Su caja de aleación con recubrimiento IPB pulido y cristal mineral lo hacen resistente y llamativo.",
-            mainImage: 'assets/relojes/stkl-07/stkl-07 (1).jpg',
-            gallery: ['assets/relojes/stkl-07/stkl-07 (1).jpg', 'assets/relojes/stkl-07/stkl-07 (2).jpg', 'assets/relojes/stkl-07/stkl-07 (3).jpg', 'assets/relojes/stkl-07/stkl-07 (4).jpg', 'assets/relojes/stkl-07/stkl-07 (5).jpg', 'assets/relojes/stkl-07/stkl-07 (6).jpg'],
+            mainImage: 'assets/relojes/stkl-07/stkl-07(1).webp',
+            gallery: ['assets/relojes/stkl-07/stkl-07(1).webp', 'assets/relojes/stkl-07/stkl-07(2).webp', 'assets/relojes/stkl-07/stkl-07(3).webp', 'assets/relojes/stkl-07/stkl-07(4).webp', 'assets/relojes/stkl-07/stkl-07(5).webp', 'assets/relojes/stkl-07/stkl-07(6).webp'],
             specifications: ["Extensible de silicona", "Cuarzo", "Cronógrafo funcional", "Calendario", "3 ATM", "Caja de Aleación con recubrimiento IPB y pulido", "Cristal de mineral"]
         },
         {
@@ -133,8 +133,8 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 1299.00,
             fullPrice: 2998.00,
             description: "Cronografo negro con detalles dorados. Precisión, fuerza y estilo competitivo. Diseñado para los verdaderos fans, este reloj Kings League combina estética moderna y precisión. Incorpora extensible de silicona, movimiento de cuarzo, cronógrafo funcional y calendario, además de resistencia al agua de 3 ATM. Su caja de aleación con recubrimiento IPB pulido y cristal mineral lo hacen resistente y llamativo.",
-            mainImage: 'assets/relojes/stkl-08/stkl-08 (1).jpg',
-            gallery: ['assets/relojes/stkl-08/stkl-08 (1).jpg', 'assets/relojes/stkl-08/stkl-08 (2).jpg', 'assets/relojes/stkl-08/stkl-08 (3).jpg', 'assets/relojes/stkl-08/stkl-08 (4).jpg', 'assets/relojes/stkl-08/stkl-08 (5).jpg', 'assets/relojes/stkl-08/stkl-08 (6).jpg'],
+            mainImage: 'assets/relojes/stkl-08/stkl-08(1).webp',
+            gallery: ['assets/relojes/stkl-08/stkl-08(1).webp', 'assets/relojes/stkl-08/stkl-08(2).webp', 'assets/relojes/stkl-08/stkl-08(3).webp', 'assets/relojes/stkl-08/stkl-08(4).webp', 'assets/relojes/stkl-08/stkl-08(5).webp', 'assets/relojes/stkl-08/stkl-08(6).webp'],
             specifications: ["Extensible de silicona", "Cuarzo", "Cronógrafo funcional", "Calendario", "3 ATM", "Caja de Aleación con recubrimiento IPB y pulido", "Cristal de mineral"]
         },
         {
@@ -146,8 +146,8 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 999.00,
             fullPrice: 2598.00,
             description: "Caja tonneau, marcadores tipo joya y rostro real en gran escala. Estatus puro. Reloj exclusivo de la Kings League con extensible de silicona, movimiento de cuarzo y resistencia al agua de 3 ATM. Destaca por su caja cuadrada de aleación con recubrimiento IPB pulido y cristal mineral. Un accesorio con estilo único y actitud deportiva.",
-            mainImage: 'assets/relojes/stkl-09/stkl-09 (1).jpg',
-            gallery: ['assets/relojes/stkl-09/stkl-09 (1).jpg', 'assets/relojes/stkl-09/stkl-09 (2).jpg', 'assets/relojes/stkl-09/stkl-09 (3).jpg', 'assets/relojes/stkl-09/stkl-09 (4).jpg', 'assets/relojes/stkl-09/stkl-09 (5).jpg', 'assets/relojes/stkl-09/stkl-09 (6).jpg'],
+            mainImage: 'assets/relojes/stkl-09/stkl-09(1).webp',
+            gallery: ['assets/relojes/stkl-09/stkl-09(1).webp', 'assets/relojes/stkl-09/stkl-09(2).webp', 'assets/relojes/stkl-09/stkl-09(3).webp', 'assets/relojes/stkl-09/stkl-09(4).webp', 'assets/relojes/stkl-09/stkl-09(5).webp', 'assets/relojes/stkl-09/stkl-09(6).webp'],
             specifications: ["Extensible de silicona", "Cuarzo", "3 ATM", "Caja de Aleación con recubrimiento IPB y pulido", "Cristal de mineral"]
         }
     ];
@@ -172,23 +172,23 @@ document.addEventListener('DOMContentLoaded', () => {
         name: "'Chicharito' Hernández",
         team: 'Olimpo United',
         logo: 'assets/escudos/OlimpoUnitedFC.webp',
-        background: 'assets/presidentes/CH14.png'
+        background: 'assets/presidentes/CH14.webp'
     }, {
         name: 'Hnos. Montiel',
         team: 'Peluche Caligari',
         logo: 'assets/escudos/PelucheCaligariFC.webp',
-        background: 'assets/presidentes/ESCORPION.png'
+        background: 'assets/presidentes/ESCORPION.webp'
     }, {
         name: 'Alana + Barcagamer',
         team: 'Raniza FC',
         logo: 'assets/escudos/RanizaFC.webp',
-        background: 'assets/presidentes/ALANA.png'
+        background: 'assets/presidentes/ALANA.webp'
     }, {
         name: 'NataliaMX + PipePunk',
         team: 'Club de Cuervos',
         logo: 'assets/escudos/ClubDeCuervosFC.webp',
-        background: 'assets/presidentes/PIPEYNATA.png'
-    }, ];
+        background: 'assets/presidentes/PIPEYNATA.webp'
+    },];
 
     const teams = [{
         name: 'Peluche Caligari',
@@ -226,8 +226,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }, {
         name: 'Los Chamos FC',
         logo: 'assets/escudos/ChamosFC.webp'
-    }, ];
-    
+    },];
+
     const teams2 = [...teams].sort(() => Math.random() - 0.5); // Shuffled teams for the second ticker
 
     const reviewsData = [{
@@ -250,7 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
         rating: 5,
         text: 'El reloj llegó en 7 días...',
         image: './img/reviews/review-4.jpg'
-    }, ];
+    },];
 
     // --- DOM ELEMENTS ---
     let cart = [];
@@ -274,7 +274,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalSpecifications = getEl('modal-specifications');
     const modalThumbnailGallery = getEl('modal-thumbnail-gallery');
     const modalReviewsContainer = getEl('modal-reviews-container');
-    const modalSmartwatchFeatures = getEl('modal-smartwatch-features'); 
+    const modalSmartwatchFeatures = getEl('modal-smartwatch-features');
     const modalOtherWatchFeatures = getEl('modal-other-watch-features'); // New element
     const quantityInput = getEl('quantity-input');
     const quantityPlus = getEl('quantity-plus');
@@ -417,21 +417,21 @@ document.addEventListener('DOMContentLoaded', () => {
             if (productsInCollection.length > 0) {
                 const collectionSection = document.createElement('div');
                 collectionSection.className = 'mb-16';
-                
+
                 const collectionTitle = document.createElement('h2');
                 collectionTitle.className = 'text-3xl sm:text-4xl md:text-6xl font-bold text-center mb-12 reveal-fade';
                 collectionTitle.style.color = '#f4af23';
                 collectionTitle.textContent = collectionName;
                 collectionSection.appendChild(collectionTitle);
-                
+
                 const productGrid = document.createElement('div');
                 productGrid.className = 'flex overflow-x-auto horizontal-scroll md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 pb-4';
-                
+
                 productsInCollection.forEach(product => {
                     const card = document.createElement('div');
                     card.className = 'product-card rounded-lg overflow-hidden shadow-lg flex-shrink-0 w-[320px] sm:w-[400px] md:w-auto flex flex-col md:flex-row';
                     card.dataset.productId = product.id;
-                    
+
                     const isWishlisted = wishlist.includes(product.id);
 
                     card.innerHTML = `
@@ -456,7 +456,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 collectionsContainer.appendChild(collectionSection);
             }
         });
-         // Add event listeners after rendering
+        // Add event listeners after rendering
         document.querySelectorAll('.wishlist-btn-card').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 e.stopPropagation(); // Prevent modal from opening
@@ -464,7 +464,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 toggleWishlist(productId);
             });
         });
-         // Make sure openModal is globally accessible for inline onclick
+        // Make sure openModal is globally accessible for inline onclick
         window.openModal = openModal;
     };
 
@@ -488,7 +488,7 @@ document.addEventListener('DOMContentLoaded', () => {
             presidentsGrid.appendChild(card);
         });
     };
-    
+
     const renderTeamTicker = (trackElement, teamsArray) => {
         trackElement.innerHTML = ''; // Clear previous items
         const allTeamLogos = [...teamsArray, ...teamsArray, ...teamsArray]; // Triple the content to ensure seamless loop
@@ -529,7 +529,7 @@ document.addEventListener('DOMContentLoaded', () => {
         modalMainImage.src = currentProductGallery[index];
         currentGalleryIndex = index;
     };
-    
+
     function getIconForSpec(spec) {
         const s = spec.toLowerCase();
         if (s.includes('cuarzo')) return `<svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.562.562 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.562.562 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" /></svg>`;
@@ -561,7 +561,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         addToCartBtn.dataset.productId = product.id;
         quantityInput.value = 1;
-        
+
         // Clear both feature containers initially
         modalSmartwatchFeatures.innerHTML = '';
         modalSmartwatchFeatures.classList.add('hidden');
@@ -607,7 +607,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             modalSmartwatchFeatures.classList.remove('hidden');
         } else {
-             // Build and show compact feature panels for other watches
+            // Build and show compact feature panels for other watches
             const featuresHTML = product.specifications.map(spec => {
                 let iconSVG = getIconForSpec(spec);
                 return `
@@ -669,7 +669,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cartModal.classList.add('hidden');
         document.body.style.overflow = 'auto';
     };
-    
+
     const openWishlistModal = () => {
         renderWishlist();
         wishlistModal.classList.remove('hidden');
@@ -686,7 +686,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cartCount.textContent = totalItems;
         cartCount.classList.toggle('hidden', totalItems === 0);
     };
-    
+
     const updateWishlistCount = () => {
         wishlistCount.textContent = wishlist.length;
         wishlistCount.classList.toggle('hidden', wishlist.length === 0);
@@ -701,7 +701,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderCart();
         updateCartCount();
     };
-    
+
     const toggleWishlist = (productId) => {
         const index = wishlist.indexOf(productId);
         if (index > -1) {
@@ -758,7 +758,7 @@ document.addEventListener('DOMContentLoaded', () => {
             updateCart(id, 0);
         });
     };
-    
+
     const renderWishlist = () => {
         wishlistItemsContainer.innerHTML = '';
         if (wishlist.length === 0) {
@@ -781,7 +781,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </button>`;
             wishlistItemsContainer.appendChild(itemEl);
         });
-         wishlistItemsContainer.querySelectorAll('.wishlist-item-remove').forEach(btn => btn.onclick = (e) => {
+        wishlistItemsContainer.querySelectorAll('.wishlist-item-remove').forEach(btn => btn.onclick = (e) => {
             const id = parseInt(e.currentTarget.dataset.id);
             toggleWishlist(id);
         });
@@ -809,7 +809,7 @@ document.addEventListener('DOMContentLoaded', () => {
     closeCartModalBtn.addEventListener('click', closeCartModal);
     wishlistBtn.addEventListener('click', openWishlistModal);
     closeWishlistModalBtn.addEventListener('click', closeWishlistModal);
-    
+
     closeModalBtn.addEventListener('click', closeModal);
     modal.addEventListener('click', (e) => {
         if (e.target === modal) closeModal();
@@ -817,7 +817,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cartModal.addEventListener('click', (e) => {
         if (e.target === cartModal) closeCartModal();
     });
-     wishlistModal.addEventListener('click', (e) => {
+    wishlistModal.addEventListener('click', (e) => {
         if (e.target === wishlistModal) closeWishlistModal();
     });
     quantityPlus.addEventListener('click', () => {
@@ -872,11 +872,11 @@ document.addEventListener('DOMContentLoaded', () => {
     modalPrevBtn.addEventListener('click', () => {
         showGalleryImage(currentGalleryIndex - 1);
     });
-    
+
     // --- TEAM TICKER ANIMATION ---
     function initializeTicker(container, track, teams, reverse = false) {
         renderTeamTicker(track, teams);
-        
+
         // Set initial position for the reverse ticker to create a different starting point
         if (reverse) {
             const trackWidth = track.scrollWidth / 3;
@@ -884,7 +884,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         let isPaused = false;
-        
+
         container.addEventListener('mouseenter', () => isPaused = true);
         container.addEventListener('mouseleave', () => isPaused = false);
 
@@ -892,11 +892,11 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!isPaused) {
                 const currentTransform = new DOMMatrix(getComputedStyle(track).transform);
                 let currentX = currentTransform.m41;
-                
+
                 let newX = currentX + (reverse ? 0.5 : -0.5); // Speed of the scroll
 
                 const trackWidth = track.scrollWidth / 3; // Width of one block of logos
-                
+
                 // ===== SEAMLESS LOOP LOGIC =====
                 if (reverse) {
                     // Scrolling right (from negative to positive transform)
@@ -924,7 +924,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const distanceFromCenter = Math.abs(screenCenter - itemCenter);
                 const img = item.querySelector('img');
 
-                if (img && distanceFromCenter < 75) { 
+                if (img && distanceFromCenter < 75) {
                     img.classList.add('is-active');
                 } else if (img) {
                     img.classList.remove('is-active');
@@ -942,7 +942,7 @@ document.addEventListener('DOMContentLoaded', () => {
     startAutoSlide(); // Start automatic sliding
     renderAllCollections();
     renderPresidents();
-    
+
     initializeTicker(teamTickerContainer1, teamTickerTrack1, teams, false);
     initializeTicker(teamTickerContainer2, teamTickerTrack2, teams2, true);
 
